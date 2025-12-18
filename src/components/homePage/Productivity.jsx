@@ -153,7 +153,7 @@ const Productivity = () => {
 
             {/* Right column feature list (ninth + tenth + eleventh images) */}
             <div className="w-full max-w-[31.4491rem] lg:max-w-none">
-              <div className="grid grid-cols-1 gap-5zz md:gap-6 h-full">
+              <div className="grid grid-cols-1 gap-5 md:gap-6 h-full">
                 {[
                   {
                     title: "Manage Multiple Teams",

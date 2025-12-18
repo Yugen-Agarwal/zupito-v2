@@ -99,7 +99,7 @@ const EmailFinderWorks = () => {
                   <div
                     key={step.number}
                     data-animate-item
-                    className="email-works-card relative w-full rounded-[1.275rem] border border-[#EEF0F3] shadow-[0_0.5rem_1.25rem_0_#6868681A] p-3 md:p-4 flex flex-col gap-[1.0625rem] bg-no-repeat bg-cover overflow-visible cursor-pointer"
+                    className="email-works-card relative w-full rounded-[2.5rem] border border-[#EEF0F3] shadow-[0_0.5rem_1.25rem_0_#6868681A] p-3 md:p-4 flex flex-col gap-[1.0625rem] bg-no-repeat bg-cover overflow-visible cursor-pointer"
                     style={{
                       transitionDelay: `${baseDelay}s`,
                       backgroundImage: "url('/images/7.png')",
