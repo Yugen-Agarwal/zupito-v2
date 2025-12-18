@@ -219,7 +219,7 @@ function Header() {
       {isMobileMenuOpen && (
         <div
           className="fixed inset-0 bg-white lg:hidden overflow-y-auto"
-          style={{ zIndex: 80 }}
+          style={{ top: '40px', zIndex: 80 }}
         >
           <button
             onClick={closeMobileMenu}
