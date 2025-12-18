@@ -34,15 +34,15 @@ body {
   letter-spacing: -0.02em;
 }
 
-.home-title-emailprecision{
+.home-title-emailprecision {
   font-size: 3.0rem;
   font-weight: 600;
   line-height: 1.15;
-  letter-spacing:-1.87px;
+  letter-spacing: -1.87px;
 }
 
 
-.home-description-emailfinder-bottom{
+.home-description-emailfinder-bottom {
   font-size: 1.156rem;
   font-weight: 400;
   line-height: 100%;
@@ -57,34 +57,34 @@ body {
   letter-spacing: -1.275px;
 }
 
-.home-subtitle-emailverified{
+.home-subtitle-emailverified {
   font-size: 18px;
   font-weight: 600;
   line-height: 42.5px;
-  letter-spacing:-1.02px;
+  letter-spacing: -1.02px;
 }
 
-.home-subtitle-emailfinder{
+.home-subtitle-emailfinder {
   font-size: 18px;
   font-weight: 600;
   line-height: 42.5px;
   letter-spacing: -0.85px;
 }
 
-.home-subtitle-actionpage{
+.home-subtitle-actionpage {
   font-size: 2.0rem;
   font-weight: 600;
   line-height: 1.35;
   letter-spacing: -0.01em;
 }
 
-.actionpage-description{
+.actionpage-description {
   font-weight: 400;
   line-height: 30.4px;
   letter-spacing: 0;
 }
 
-.home-description-actionpage{
+.home-description-actionpage {
   font-size: 18px;
   font-weight: 500;
   line-height: 30.1px;
@@ -105,14 +105,14 @@ body {
   letter-spacing: 0;
 }
 
-.home-description-emailverified{
+.home-description-emailverified {
   font-size: 18px;
   font-weight: 400;
   line-height: 34px;
   letter-spacing: 0;
 }
 
-.home-description-emailprecision{
+.home-description-emailprecision {
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0;
@@ -132,6 +132,7 @@ body {
   letter-spacing: 0;
   word-spacing: 0.85px;
 }
+
 .home-description-plugin {
   font-size: 17px;
   font-weight: 500;
@@ -235,9 +236,11 @@ body {
     transform: translateY(100%);
     opacity: 0;
   }
+
   60% {
     opacity: 1;
   }
+
   100% {
     transform: translateY(0);
     opacity: 1;
@@ -249,6 +252,7 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+
   100% {
     transform: translateY(-100%);
     opacity: 0;
@@ -275,10 +279,12 @@ body {
     transform: translateX(-23.8px);
     opacity: 0;
   }
+
   65% {
     transform: translateX(-3.4px);
     opacity: 1;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -286,6 +292,7 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   [data-animate],
   [data-animate="fade-right"],
   [data-animate="fade-left"] {
@@ -312,24 +319,36 @@ body {
   .header-nav-link {
     font-size: 15.3px !important;
   }
-  
+
   .header-button-text {
     font-size: 15.3px !important;
   }
 }
+
 @media (max-width: 640px) {
   .home-title {
     font-size: 28.9px !important;
   }
+
+  .home-title-emailprecision {
+    font-size: 2.5rem;
+  }
 }
+
 @media (max-width: 470px) {
   .home-subtitle {
     font-size: 18.7px !important;
   }
+
   .home-title {
     font-size: 27.2px !important;
   }
+
+  .home-title-emailprecision {
+    font-size: 2rem;
+  }
 }
+
 @media (max-width: 445px) {
   .home-title {
     font-size: 25.5px !important;

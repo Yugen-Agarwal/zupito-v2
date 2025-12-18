@@ -39,15 +39,15 @@ function HeroSection() {
           <div className="max-w-full lg:max-w-[1250px] mx-auto relative">
             <div
               className="grid grid-cols-1 lg:grid-cols-2 
-              items-center lg:items-start gap-y-12 lg:gap-y-0 lg:gap-x-8
+              items-center lg:items-start  lg:gap-x-8
                [@media(min-width:64rem)_and_(max-width:79.9375rem)]:min-h-[calc(100vh-7.5rem)] "
             >
               {/* Copy */}
-              <div className="max-w-full lg:max-w-[600px] flex flex-col items-center lg:items-start  pt-4 sm:pt-8 md:pt-10 lg:pt-18 xl:pt-24">
+              <div className="max-w-full lg:max-w-[600px] flex flex-col items-start sm:items-center lg:items-start  pt-4 sm:pt-8 md:pt-10 lg:pt-18 xl:pt-24">
                 <h1
                   data-animate-item
                   style={{ transitionDelay: "0.05s" }}
-                  className="home-main-title text-[1.9124rem] sm:text-[2.4437rem] md:text-[2.9749rem] lg:text-[3.3999rem] xl:text-[3.0281rem] leading-[108%] text-[#132436] font-bold font-['Inter'] space-y-2"
+                  className="home-main-title text-[2.5rem] sm:text-[2.8rem] md:text-[3rem] lg:text-[3.4rem] xl:text-[3rem] leading-[1.08] text-[#132436] font-bold font-['Inter']"
                 >
                   {/* Line 1: AI Tool To Connect */}
                   <span className="block sm:whitespace-nowrap">
@@ -60,29 +60,28 @@ function HeroSection() {
                       {ROTATING_WORDS[activeWordIndex]}
                     </span>
                   </span>
+
                   {/* Line 2: Emails [badge] Instantly */}
-                  <span className="block sm:whitespace-nowrap">
+                  <span className="block sm:whitespace-nowrap flex items-center flex-wrap mt-2">
                     <span>Emails</span>
-                    <span className="align-middle inline-flex items-center justify-center mx-2 mr-2! relative top-[-0.125rem]">
+                    <span className="inline-flex items-center justify-center mx-2 relative top-[-2px]">
                       <img
                         src="/images/load.svg"
                         alt=""
-                        className="w-[1.4875rem] h-[1.4875rem] sm:w-[1.9124rem] sm:h-[1.9124rem] md:w-[2.5499rem] md:h-[2.5499rem] lg:w-[2.9749rem] lg:h-[2.9749rem] xl:w-[3.6124rem] xl:h-[3.6124rem]"
+                        className="w-[1.5rem] h-[1.5rem] sm:w-[1.9rem] sm:h-[1.9rem] md:w-[2.55rem] md:h-[2.55rem] lg:w-[2.97rem] lg:h-[2.97rem] xl:w-[3.6rem] xl:h-[3.6rem]"
                       />
                     </span>
                     <span>Instantly</span>
                   </span>
                 </h1>
-
                 <p
                   data-animate-item
                   style={{ transitionDelay: "0.15s" }}
-                  className="home-description text-[#546779] text-[14px]! sm:text-[16px] md:text-[18px]! leading-[165%] font-['Manrope'] max-w-full sm:max-w-[25.9681rem] !mt-6 sm:!mt-7"
+                  className="home-description text-[#546779] text-[14px] sm:text-[16px] md:text-[18px] leading-[1.65] font-['Manrope'] max-w-full sm:max-w-[26rem] mt-6 sm:mt-7"
                 >
-                  Simplify outreach with Zupitu's AI Email Verifier<br /> & Finder –
-                  validate emails, find business contacts, and boost
-                  deliverability.
+                  Simplify outreach with Zupitu's AI Email Verifier & Finder – validate emails, find business contacts, and boost deliverability.
                 </p>
+
 
                 {/* CTAs */}
                 <div

@@ -13,16 +13,17 @@ const Teams = () => {
       <div className="w-full px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-[9.031rem] py-10 lg:py-16">
         <div className="max-w-full lg:max-w-[1250px] mx-auto relative">
           {/* Top badge */}
-          <div
-            data-animate-item
-            className="inline-flex font-['Manrope'] items-center justify-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#FFE9F2] px-2 py-2 h-[1.8063rem] text-center align-middle font-bold text-[#132436] text-[0.7438rem] leading-[100%]"
-          >
-            <span className="w-2.5 h-2.5 rounded-full bg-[#5B7CF5]" />
-            <span>Plugin integration</span>
+          <div className="flex justify-center lg:justify-start">
+            <div
+              data-animate-item
+              className="inline-flex font-['Manrope'] items-center justify-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#FFE9F2] px-2 py-2 h-[1.8063rem] text-center align-middle font-bold text-[#132436] text-[0.7438rem] leading-[100%]"
+            >
+              <span className="w-2.5 h-2.5 rounded-full bg-[#5B7CF5]" />
+              <span>Plugin integration</span>
+            </div>
           </div>
-
           {/* Hero row: heading left, paragraph right on large screens */}
-          <div className="!mt-5 grid grid-cols-1 lg:grid-cols-[auto_1fr] items-start gap-6 lg:gap-16">
+          <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 items-start gap-6 lg:gap-16 text-center lg:text-left">
             {/* Heading */}
             <h2
               data-animate-item
@@ -52,11 +53,11 @@ const Teams = () => {
             </h2>
 
             {/* Sub copy */}
-            <div className="text-end">
+            <div className="flex justify-center lg:justify-end">
               <p
                 data-animate-item
                 style={{ transitionDelay: "0.15s" }}
-                className="max-w-[510px] mx-auto font-['Manrope'] font-medium text-[18px] text-[#475768] text-right"
+                className="max-w-[510px] font-['Manrope'] font-medium text-[18px] text-[#475768]"
               >
                 Experience the quality and speed of Artificial Intelligence in email verification and email finding. Try Zupitu without Sign-Up. We welcome FREE trials and offer 10 Credits daily forever.
               </p>
@@ -101,19 +102,19 @@ const Teams = () => {
                   <img
                     src={
                       idx === 0
-                        ? "/images/streamlined-efficiency.svg"
+                        ? "/images/streamlined-efficiency.png"
                         : idx === 1
-                          ? "/images/automate-workflows.svg"
+                          ? "/images/automate-workflows.png"
                           : idx === 2
-                            ? "/images/customer-support.svg"
+                            ? "/images/customer-support.png"
                             : idx === 3
-                              ? "/images/quick-results.svg"
+                              ? "/images/quick-results.png"
                               : idx === 4
-                                ? "/images/costEffective-solutions.svg"
-                                : "/images/campaign-confidence.svg"
+                                ? "/images/costEffective-solutions.png"
+                                : "/images/campaign-confidence.png"
                     }
                     alt=""
-                    className="w-[1.4875rem] h-[1.4875rem] sm:w-[1.5938rem] sm:h-[1.5938rem] lg:w-[1.6999rem] lg:h-[1.6999rem]"
+                    className="w-full h-full"
                   />
                 </div>
                 <div className="flex flex-col gap-3">
