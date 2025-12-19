@@ -112,7 +112,7 @@ const ActionsPage = () => {
                       <p
                         data-animate-item
                         style={{ transitionDelay: "0.18s" }}
-                        className="actionpage-description text-[18px]  text-[#546779] font-['Manrope'] max-w-[29.8023rem]"
+                        className="actionpage-description text-[18px]  text-[#546779] font-['Manrope'] pr-2"
                       >
                         Verify up to 10 emails instantly without sign-up just
                         enter an email, click Verify, and repeat. Explore bulk
@@ -197,7 +197,6 @@ const ActionsPage = () => {
     text-center
     text-[#546779]
     opacity-70
-    max-w-[26.0305rem]
     px-2 sm:px-4
   "
                     >
@@ -210,7 +209,7 @@ const ActionsPage = () => {
                       <div
                         data-animate-item
                         style={{ transitionDelay: "0.2s" }}
-                        className="mx-auto w-full mb-4 max-w-[26.9867rem] bg-white rounded-[5.8436rem] h-[2.5499rem] sm:h-[3.9842rem] flex items-center shadow-[0_0.125rem_0_0_#0000000A] border border-[#E6E8EB] overflow-hidden"
+                        className="mx-auto w-full max-w-[26.9867rem] bg-white rounded-[5.8436rem] h-[50px] sm:h-[56px] flex items-center shadow-[0_0.125rem_0_0_#0000000A] border border-[#E6E8EB] overflow-hidden"
                       >
                         <input
                           type="email"
@@ -223,10 +222,10 @@ const ActionsPage = () => {
                           className="
     inline-flex items-center justify-center 
     font-['Manrope'] font-semibold 
-    text-[0.7438rem]
-    sm:text-[0.85rem]
-    md:text-[0.9563rem]
-    lg:text-[1rem]
+    text-[10px]
+    sm:text-[11px]
+    md:text-[12px]
+    lg:text-[14px]
     tracking-[-0.01em]
     sm:tracking-[-0.01em]
     md:tracking-[-0.01em]

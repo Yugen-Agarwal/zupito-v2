@@ -88,7 +88,7 @@ const Productivity = () => {
                 </div>
 
                 {/* Bottom content block (sixth image) */}
-                <div className="px-9 py-7 md:px-9 md:py-8 lg:px-9 lg:py-8 bg-white/0 rounded-b-[1.275rem]">
+                <div className="px-9 md:px-9 lg:px-9 bg-white/0 rounded-b-[1.275rem]">
                   <div className="flex flex-col gap-1">
                     <div
                       data-animate-item

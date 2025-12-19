@@ -31,7 +31,7 @@ const EmailPrecision = () => {
               </div>
 
               {/* HEADLINE */}
-              <div className="flex flex-col gap-[0.1063rem] min-w-0">
+              <div className="flex flex-col gap-2 min-w-0">
 
                 {/* Line 1 */}
                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-[0.1593rem] min-w-0">
