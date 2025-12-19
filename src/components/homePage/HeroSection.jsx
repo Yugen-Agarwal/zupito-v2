@@ -35,8 +35,8 @@ function HeroSection() {
         className="relative w-full overflow-hidden "
       >
         {/* Dots/backdrop spacing wrapper to mimic Figma breathing room */}
-        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 pb-10">
-          <div className="max-w-[1250px] mx-auto relative">
+        <div className="home-container pb-10">
+          <div className="mx-auto relative">
             <div
               className="grid grid-cols-1 md:grid-cols-2 
               items-center md:items-start gap-x-4 md:gap-x-6 lg:gap-x-8
@@ -170,7 +170,7 @@ function HeroSection() {
                   <img
                     src="/images/Frame 1321317782.png"
                     alt="Zupito email automation flow"
-                    className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[420px] lg:max-w-[520px] xl:max-w-full h-auto mx-auto md:mx-0 select-none pointer-events-none [image-rendering:auto]"
+                    className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[420px] lg:max-w-[520px] xl:max-w-[580px] h-auto mx-auto md:mx-0 select-none pointer-events-none [image-rendering:auto]"
                   />
                 </div>
               </div>

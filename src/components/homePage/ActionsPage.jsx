@@ -9,8 +9,8 @@ const ActionsPage = () => {
       className="relative w-full bg-[#FAFBFF] overflow-hidden !mt-4"
     >
       {/* Outer container mirrors HeroSection spacing rhythm */}
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-10 lg:py-14">
-        <div className="max-w-auto lg:max-w-[1250px] mx-auto relative">
+      <div className="home-container py-10 lg:py-14">
+        <div className="w-full mx-auto relative">
           {/* Header copy */}
           <div className="text-center">
             <div
@@ -69,91 +69,92 @@ const ActionsPage = () => {
           />
 
           {/* Card container (desktop exact sizing as provided) */}
-          <div className="relative z-[1] mt-12 sm:mt-16 md:mt-10 lg:mt-15 top-8 sm:top-12 md:top-16 lg:top-24 bg-white rounded-[0.85rem] sm:rounded-[1.0625rem] shadow-[0_0.625rem_1.875rem_0_#0000001A] mx-auto h-auto lg:h-[30.3866rem] overflow-hidden mb-8 sm:mb-12 md:mb-16 lg:mb-[5.3123rem] max-w-full lg:max-w-[1250px]">
-            {/* Desktop divider line at x=681, 30.75rem tall */}
-            {/* <div
+          <div className="w-full relative z-[1] mt-12 sm:mt-16 md:mt-10 lg:mt-15 top-8 sm:top-12 md:top-16 lg:top-24 h-auto lg:h-[30.3866rem] mb-8 sm:mb-12 md:mb-16 lg:mb-[5.3123rem]">
+            <div className="bg-white rounded-[0.85rem] sm:rounded-[1.0625rem] shadow-[0_0.625rem_1.875rem_0_#0000001A] mx-auto h-full overflow-hidden w-full">
+              {/* Desktop divider line at x=681, 30.75rem tall */}
+              {/* <div
               aria-hidden="true"
               className="hidden lg:block absolute left-1/2 -translate-x-1/2 inset-y-12 w-0 border-l lg:px-10! border-[#132436] opacity-10 pointer-events-none"
             /> */}
 
-            <div className="relative h-auto lg:h-[30.3866rem] z-[1] grid grid-cols-1 p-4 sm:p-6 md:p-8 md:grid-cols-2 gap-6 md:gap-8 lg:gap-0 items-stretch">
-              {/* Left panel (copy) sized 561x451 at 3.75rem offset */}
-              <div className="relative rounded-[0.85rem]  flex flex-col justify-between gap-7">
-                <div className="flex flex-col gap-5 sm:pl-4">
-                  <div
+              <div className="relative h-auto lg:h-[30.3866rem] z-[1] grid grid-cols-1 p-4 sm:p-6 md:p-8 md:grid-cols-2 gap-6 md:gap-8 lg:gap-0 items-stretch">
+                {/* Left panel (copy) sized 561x451 at 3.75rem offset */}
+                <div className="relative rounded-[0.85rem]  flex flex-col justify-between gap-7">
+                  <div className="flex flex-col gap-5 sm:pl-4">
+                    <div
+                      data-animate-item
+                      className="inline-flex items-center font-['Manrope'] justify-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#F0F3FF] px-3 sm:px-4 py-2 w-auto sm:w-[11.333rem] h-auto sm:h-[2.4437rem] text-[0.7438rem] sm:text-[0.85rem] md:text-[0.9563rem] leading-[100%] font-bold text-[#132436]"
+                    >
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#5B7CF5] inline-block"></div>
+                      <div className="inline-block">Let's get in touch</div>
+                    </div>
+
+
+                    <div className="flex gap-3 flex-col">
+                      <h3
+                        data-animate-item
+                        style={{ transitionDelay: "0.12s" }}
+                        className="home-subtitle-actionpage  text-[#132436] font-['Inter']"
+                      >
+                        Comprehensive Personal &{" "}
+                        <br className="hidden sm:block" />
+                        Business
+                        <span className="align-middle inline-flex items-center justify-center mx-2 relative -top-px">
+                          <img
+                            src="/images/setting-orange-1.svg"
+                            alt=""
+                            className=" w-[2.4437rem] h-[2.4437rem]"
+                          />
+                        </span>
+                        Email Validation
+                      </h3>
+
+                      <p
+                        data-animate-item
+                        style={{ transitionDelay: "0.18s" }}
+                        className="actionpage-description text-[18px]  text-[#546779] font-['Manrope'] max-w-[29.8023rem]"
+                      >
+                        Verify up to 10 emails instantly without sign-up just
+                        enter an email, click Verify, and repeat. Explore bulk
+                        validation, verification history, and all platform features
+                        with unlimited access and no credits required.
+                      </p>
+                    </div>
+                  </div>
+
+                  <button
                     data-animate-item
-                    className="inline-flex items-center font-['Manrope'] justify-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#F0F3FF] px-3 sm:px-4 py-2 w-auto sm:w-[11.333rem] h-auto sm:h-[2.4437rem] text-[0.7438rem] sm:text-[0.85rem] md:text-[0.9563rem] leading-[100%] font-bold text-[#132436]"
+                    style={{ transitionDelay: "0.25s" }}
+                    data-hover="lift"
+                    className="inline-flex mb-7 items-center pl-4 font-['Manrope'] gap-2 text-[#EB3609] font-bold text-[1.1688rem] leading-7 sm:text-[1.1688rem]  md:leading-[1.5938rem] capitalize cursor-pointer"
                   >
-                    <div className="w-2.5 h-2.5 rounded-full bg-[#5B7CF5] inline-block"></div>
-                    <div className="inline-block">Let's get in touch</div>
-                  </div>
-
-
-                  <div className="flex gap-3 flex-col">
-                    <h3
-                      data-animate-item
-                      style={{ transitionDelay: "0.12s" }}
-                      className="home-subtitle-actionpage  text-[#132436] font-['Inter']"
-                    >
-                      Comprehensive Personal &{" "}
-                      <br className="hidden sm:block" />
-                      Business
-                      <span className="align-middle inline-flex items-center justify-center mx-2 relative -top-px">
-                        <img
-                          src="/images/setting-orange-1.svg"
-                          alt=""
-                          className=" w-[2.4437rem] h-[2.4437rem]"
-                        />
-                      </span>
-                      Email Validation
-                    </h3>
-
-                    <p
-                      data-animate-item
-                      style={{ transitionDelay: "0.18s" }}
-                      className="actionpage-description text-[18px]  text-[#546779] font-['Manrope'] max-w-[29.8023rem]"
-                    >
-                      Verify up to 10 emails instantly without sign-up just
-                      enter an email, click Verify, and repeat. Explore bulk
-                      validation, verification history, and all platform features
-                      with unlimited access and no credits required.
-                    </p>
-                  </div>
+                    <span>Checkout Our Deals</span>
+                    <span className="flex items-center justify-center ">
+                      <img
+                        src="/images/right-orange-arrow.svg"
+                        alt="Right arrow icon"
+                        className="w-4 h-3"
+                      />
+                    </span>
+                  </button>
                 </div>
 
-                <button
-                  data-animate-item
-                  style={{ transitionDelay: "0.25s" }}
-                  data-hover="lift"
-                  className="inline-flex mb-7 items-center pl-4 font-['Manrope'] gap-2 text-[#EB3609] font-bold text-[1.1688rem] leading-7 sm:text-[1.1688rem]  md:leading-[1.5938rem] capitalize cursor-pointer"
-                >
-                  <span>Checkout Our Deals</span>
-                  <span className="flex items-center justify-center ">
-                    <img
-                      src="/images/right-orange-arrow.svg"
-                      alt="Right arrow icon"
-                      className="w-4 h-3"
-                    />
-                  </span>
-                </button>
-              </div>
+                {/* Right panel (widget) sized 600x490 at 724/42 */}
+                <div className="md:ps-7 md:border-l border-[#13243617]">
+                  <div className="relative mx-auto h-auto min-h-[21.2494rem] sm:min-h-[23.9056rem] lg:h-[26.0305rem] lg:mx-0 w-full max-w-full bg-[#132436] rounded-[1.0625rem] sm:rounded-[1.275rem] p-3 sm:p-4 md:p-6 flex flex-col items-center gap-3 sm:gap-4 md:gap-[1.5938rem]">
+                    {/* Top icon */}
+                    <div
+                      data-animate-item
+                      className="mt-2 sm:mt-3 relative w-[2.5499rem] h-[2.5499rem] sm:w-[4.1437rem] sm:h-[4.1437rem] rounded-full bg-white shadow-sm"
+                    >
+                      <img src="/images/email-icon.svg" alt="Email" className="absolute left-[55%] top-[52%] -translate-x-1/2 -translate-y-1/2 w-[1.5938rem] h-[1.5938rem] sm:w-[2.5898rem] sm:h-[2.0718rem] object-contain" />
+                    </div>
 
-              {/* Right panel (widget) sized 600x490 at 724/42 */}
-              <div className="md:ps-7 md:border-l border-[#13243617]">
-                <div className="relative mx-auto h-auto min-h-[21.2494rem] sm:min-h-[23.9056rem] lg:h-[26.0305rem] lg:mx-0 w-full max-w-full bg-[#132436] rounded-[1.0625rem] sm:rounded-[1.275rem] p-3 sm:p-4 md:p-6 flex flex-col items-center gap-3 sm:gap-4 md:gap-[1.5938rem]">
-                  {/* Top icon */}
-                  <div
-                    data-animate-item
-                    className="mt-2 sm:mt-3 relative w-[2.5499rem] h-[2.5499rem] sm:w-[4.1437rem] sm:h-[4.1437rem] rounded-full bg-white shadow-sm"
-                  >
-                    <img src="/images/email-icon.svg" alt="Email" className="absolute left-[55%] top-[52%] -translate-x-1/2 -translate-y-1/2 w-[1.5938rem] h-[1.5938rem] sm:w-[2.5898rem] sm:h-[2.0718rem] object-contain" />
-                  </div>
-
-                  {/* Title */}
-                  <h4
-                    data-animate-item
-                    style={{ transitionDelay: "0.08s" }}
-                    className="
+                    {/* Title */}
+                    <h4
+                      data-animate-item
+                      style={{ transitionDelay: "0.08s" }}
+                      className="
     font-['Inter'] 
     font-semibold 
     text-[1.0625rem]
@@ -170,19 +171,19 @@ const ActionsPage = () => {
     text-white
     px-2
   "
-                  >
-                    Verify Personal & Business
-                    <br className="hidden sm:block" />
-                    Emails Instantly
-                  </h4>
+                    >
+                      Verify Personal & Business
+                      <br className="hidden sm:block" />
+                      Emails Instantly
+                    </h4>
 
 
 
-                  {/* Subtitle */}
-                  <p
-                    data-animate-item
-                    style={{ transitionDelay: "0.15s" }}
-                    className="
+                    {/* Subtitle */}
+                    <p
+                      data-animate-item
+                      style={{ transitionDelay: "0.15s" }}
+                      className="
     font-['Manrope']
     font-medium
     text-[0.7438rem]
@@ -199,27 +200,27 @@ const ActionsPage = () => {
     max-w-[26.0305rem]
     px-2 sm:px-4
   "
-                  >
-                    Check up to 10 emails for free — no sign-up required.
-                  </p>
-
-
-                  {/* Input group */}
-                  <div className="w-full px-2">
-                    <div
-                      data-animate-item
-                      style={{ transitionDelay: "0.2s" }}
-                      className="mx-auto w-full mb-4 max-w-[26.9867rem] bg-white rounded-[5.8436rem] h-[2.5499rem] sm:h-[3.9842rem] flex items-center shadow-[0_0.125rem_0_0_#0000000A] border border-[#E6E8EB] overflow-hidden"
                     >
-                      <input
-                        type="email"
-                        placeholder="Email Address..."
-                        className="flex-1 min-w-0 h-full px-3 sm:px-4 md:px-5 text-[0.7438rem] sm:text-[0.85rem] md:text-[0.9563rem] lg:text-[1rem] placeholder:text-[#9AA6B2] text-[#3A4A5A] font-medium outline-none bg-transparent"
-                        aria-label="Email address"
-                      />
-                      <button
-                        type="button"
-                        className="
+                      Check up to 10 emails for free — no sign-up required.
+                    </p>
+
+
+                    {/* Input group */}
+                    <div className="w-full px-2">
+                      <div
+                        data-animate-item
+                        style={{ transitionDelay: "0.2s" }}
+                        className="mx-auto w-full mb-4 max-w-[26.9867rem] bg-white rounded-[5.8436rem] h-[2.5499rem] sm:h-[3.9842rem] flex items-center shadow-[0_0.125rem_0_0_#0000000A] border border-[#E6E8EB] overflow-hidden"
+                      >
+                        <input
+                          type="email"
+                          placeholder="Email Address..."
+                          className="flex-1 min-w-0 h-full px-3 sm:px-4 md:px-5 text-[0.7438rem] sm:text-[0.85rem] md:text-[0.9563rem] lg:text-[1rem] placeholder:text-[#9AA6B2] text-[#3A4A5A] font-medium outline-none bg-transparent"
+                          aria-label="Email address"
+                        />
+                        <button
+                          type="button"
+                          className="
     inline-flex items-center justify-center 
     font-['Manrope'] font-semibold 
     text-[0.7438rem]
@@ -248,16 +249,17 @@ const ActionsPage = () => {
     transition-colors cursor-pointer
     mr-1.5
   "
-                      >
-                        Verify Now
-                      </button>
+                        >
+                          Verify Now
+                        </button>
 
 
+                      </div>
                     </div>
-                  </div>
 
-                  {/* bottom spacing */}
-                  {/* <div className="mb-4" /> */}
+                    {/* bottom spacing */}
+                    {/* <div className="mb-4" /> */}
+                  </div>
                 </div>
               </div>
             </div>

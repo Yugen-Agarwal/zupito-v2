@@ -47,9 +47,9 @@ function Header() {
       style={{ zIndex: 60 }}
     >
       {/* Container with responsive padding */}
-      <div className="w-full h-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
+      <div className="home-container h-full">
         {/* Content wrapper with max-width 1280px and space-between layout */}
-        <div className="max-w-full lg:max-w-[1250px] h-full mx-auto flex items-center justify-between">
+        <div className="h-full flex items-center justify-between">
           {/* Logo */}
           <div className="shrink-0">
             <a href="#">

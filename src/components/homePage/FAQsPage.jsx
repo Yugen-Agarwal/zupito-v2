@@ -36,8 +36,8 @@ const FAQsPage = () => {
       style={{ background: 'var(--color-white-solid, #FFFFFF)' }}
     >
       {/* Outer container with responsive padding */}
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-8 lg:py-10 overflow-visible">
-        <div className="max-w-full lg:max-w-[1250px] mx-auto relative">
+      <div className="home-container py-8 lg:py-10">
+        <div className="w-full mx-auto relative">
           {/* Header Section - max-width 85.125rem */}
           <div className="w-full">
             {/* FAQ Tag - width: 5.3125rem, height: 3.0625rem */}
@@ -72,76 +72,74 @@ const FAQsPage = () => {
                 </h2>
               </div>
 
-              {/* Right side - Description */}
-              <div className="flex-1 max-w-[568px] lg:max-w-none">
+              {/* Right side - Description and Questions */}
+              <div className="flex-1 lg:max-w-none">
                 <p
                   data-animate-item
                   style={{ transitionDelay: "0.15s" }}
-                  className="home-description text-[#546779]"
+                  className="home-description text-[#546779] mb-8 lg:mb-[2.1249rem]"
                 >
                   If you're new or looking for answers to your questions, this guide will help you learn more about our services and their features.
                 </p>
-              </div>
-            </div>
 
-            {/* FAQ Items Section - width: 85.125rem, height: 40.9375rem, padding-top: 3.125rem */}
-            <div className="!mt-8 lg:!mt-[2.1249rem] max-w-full">
-              {faqs.map((faq, index) => (
-                <div
-                  key={index}
-                  className="w-full"
-                  style={index > 0 ? { borderTop: '0.0625rem solid var(--color-grey-85, #D5D7DA)' } : undefined}
-                >
-                  {/* FAQ Item - width: 85.125rem, height: 8.25rem, padding: 3rem 1.875rem */}
-                  <div
-                    data-animate-item
-                    style={{ transitionDelay: `${0.1 * (index + 1)}s` }}
-                    className="w-full py-8 lg:py-[1.0625rem] flex items-center justify-between cursor-pointer transition-colors hover:bg-gray-50/50"
-                    onClick={() => toggleFAQ(index)}
-                  >
-                    <div className="flex-1 pr-4">
-                      <h3 className="text-[20.4px] font-semibold text-[#132436] font-['Manrope'] capitalize">
-                        {index + 1}. {faq.question}
-                      </h3>
-                    </div>
-
-                    {/* Toggle Button - width: 3.75rem, height: 2.5rem, border-radius: 3.125rem */}
-                    <button
-                      data-hover="lift"
-                      className={`shrink-0 w-[2.6562rem] h-[1.8063rem] rounded-[2.6562rem] flex items-center justify-center transition-all duration-300 cursor-pointer ${openIndex === index
-                        ? 'bg-[#132436]'
-                        : 'bg-[#F6F6F6]'
-                        }`}
-                      aria-label={openIndex === index ? 'Collapse answer' : 'Expand answer'}
-                      type="button"
+                {/* FAQ Items Section */}
+                <div className="max-w-full">
+                  {faqs.map((faq, index) => (
+                    <div
+                      key={index}
+                      className="w-full"
+                      style={index > 0 ? { borderTop: '0.0625rem solid var(--color-grey-85, #D5D7DA)' } : undefined}
                     >
-                      {openIndex === index ? (
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="w-5 h-5 sm:w-6 sm:h-6">
-                          <path d="M19 13H5v-2h14v2z" fill="white" />
-                        </svg>
-                      ) : (
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="w-5 h-5 sm:w-6 sm:h-6">
-                          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="#132436" />
-                        </svg>
-                      )}
-                    </button>
-                  </div>
+                      {/* FAQ Item */}
+                      <div
+                        data-animate-item
+                        style={{ transitionDelay: `${0.1 * (index + 1)}s` }}
+                        className="w-full py-8 lg:py-[1.0625rem] flex items-center justify-between cursor-pointer transition-colors hover:bg-gray-50/50"
+                        onClick={() => toggleFAQ(index)}
+                      >
+                        <div className="flex-1 pr-4">
+                          <h3 className="text-[20.4px] font-semibold text-[#132436] font-['Manrope'] capitalize">
+                            {index + 1}. {faq.question}
+                          </h3>
+                        </div>
 
-                  {/* Answer Section with smooth animation */}
-                  <div
-                    className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-[26.5617rem] opacity-100' : 'max-h-0 opacity-0'
-                      }`}
-                  >
-                    <div className="px-6 lg:px-[2.1249rem] pb-8 lg:pb-12">
-                      <p className="text-[0.85rem] sm:text-[0.9563rem] font-normal text-[#747C9A] font-['Manrope'] max-w-full">
-                        {faq.answer}
-                      </p>
+                        {/* Toggle Button */}
+                        <button
+                          data-hover="lift"
+                          className={`shrink-0 w-[2.6562rem] h-[1.8063rem] rounded-[2.6562rem] flex items-center justify-center transition-all duration-300 cursor-pointer ${openIndex === index
+                            ? 'bg-[#132436]'
+                            : 'bg-[#F6F6F6]'
+                            }`}
+                          aria-label={openIndex === index ? 'Collapse answer' : 'Expand answer'}
+                          type="button"
+                        >
+                          {openIndex === index ? (
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="w-5 h-5 sm:w-6 sm:h-6">
+                              <path d="M19 13H5v-2h14v2z" fill="white" />
+                            </svg>
+                          ) : (
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="w-5 h-5 sm:w-6 sm:h-6">
+                              <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" fill="#132436" />
+                            </svg>
+                          )}
+                        </button>
+                      </div>
+
+                      {/* Answer Section */}
+                      <div
+                        className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-[26.5617rem] opacity-100' : 'max-h-0 opacity-0'
+                          }`}
+                      >
+                        <div className="px-6 lg:px-[2.1249rem] pb-8 lg:pb-12">
+                          <p className="text-[0.85rem] sm:text-[0.9563rem] font-normal text-[#747C9A] font-['Manrope'] max-w-full">
+                            {faq.answer}
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-
-                  {/* Divider line removed in favor of top border on item wrapper */}
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </div>

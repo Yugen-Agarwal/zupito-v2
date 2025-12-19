@@ -10,8 +10,8 @@ const EmailsVerified = () => {
       data-animate="fade-up"
       className="relative w-full bg-white overflow-hidden"
     >
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-10 lg:py-16 pt-0!">
-        <div className="max-w-full lg:max-w-[1250px] mx-auto relative">
+      <div className="home-container py-10 lg:py-16 pt-0!">
+        <div className="w-full mx-auto relative">
           <div className="w-full mx-auto lg:flex gap-6 md:gap-8">
 
             {/* Left column */}

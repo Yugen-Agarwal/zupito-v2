@@ -10,8 +10,8 @@ const EmailFinder = () => {
       className="relative w-full bg-white overflow-hidden"
     >
       {/* Outer container - follow ActionsPage spacing rhythm */}
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-10 lg:py-16">
-        <div className="max-w-full lg:max-w-[1250px] h-auto mx-auto">
+      <div className="home-container py-10 lg:py-16">
+        <div className="w-full h-auto mx-auto">
           {/* First image: overall card container */}
           <div className="relative w-full bg-white  overflow-hidden">
             {/* Two column responsive layout */}

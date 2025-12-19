@@ -37,10 +37,10 @@ const EmailFinderWorks = () => {
     >
       {/* Outer container spacing mirrors other homepage sections */}
       <div
-        className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-8 lg:py-10 overflow-visible"
+        className="home-container py-8 lg:py-10"
         style={{ overflow: 'visible', minHeight: 'auto' }}
       >
-        <div className="max-w-full lg:max-w-[1250px] mx-auto relative overflow-visible">
+        <div className="w-full mx-auto relative overflow-visible">
           {/* Header */}
           <div className="text-center">
             <div
@@ -92,7 +92,7 @@ const EmailFinderWorks = () => {
 
           {/* Three different cards with background image per card */}
           <div className="relative flex justify-center bottom-0 lg:-bottom-40 !mb-8 md:!mb-12 lg:!mb-[7.4373rem]">
-            <div className="relative mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.275rem] md:gap-[1.3813rem] lg:gap-[1.5406rem] w-full lg:max-w-[1250px] overflow-visible">
+            <div className="relative mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.275rem] md:gap-[1.3813rem] lg:gap-[1.5406rem] w-full overflow-visible">
               {steps.map((step, idx) => {
                 const baseDelay = 0.1 + idx * 0.08
                 return (

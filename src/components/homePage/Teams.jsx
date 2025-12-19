@@ -10,8 +10,8 @@ const Teams = () => {
       className="relative w-full bg-[#FDF9FB] overflow-hidden"
     >
       {/* Outer container spacing mirrors ActionsPage rhythm */}
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-10 lg:py-16">
-        <div className="max-w-full lg:max-w-[1250px] mx-auto relative">
+      <div className="home-container py-10 lg:py-16">
+        <div className="w-full mx-auto relative">
           {/* Top badge */}
           <div className="flex justify-center lg:justify-start">
             <div

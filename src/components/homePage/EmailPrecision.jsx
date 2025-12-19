@@ -11,8 +11,8 @@ const EmailPrecision = () => {
       className="relative w-full bg-white overflow-hidden"
     >
 
-      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-8 lg:py-12">
-        <div className="max-w-full lg:max-w-[1250px] mx-auto relative">
+      <div className="home-container py-8 lg:py-12">
+        <div className="mx-auto relative">
 
           <div className="w-full flex flex-col lg:flex-row lg:justify-between lg:items-center gap-[0.3188rem] md:gap-[0.425rem] lg:gap-[0.5313rem]">
 

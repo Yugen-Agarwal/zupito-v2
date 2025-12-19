@@ -10,8 +10,8 @@ const Productivity = () => {
       className="relative w-full bg-[#FAFBFF] overflow-hidden"
     >
       {/* Container rhythm mirrors ActionsPage */}
-      <div className="w-fullpx-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-10 lg:py-16">
-        <div className="max-w-full lg:max-w-[1250px] mx-auto">
+      <div className="home-container py-10 lg:py-16">
+        <div className="w-full mx-auto">
           {/* Top copy row (second image sizing intent) */}
           <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1.0fr] items-start">
             {/* Headline block on the left */}
