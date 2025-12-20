@@ -141,7 +141,7 @@ const ActionsPage = () => {
 
                 {/* Right panel (widget) sized 600x490 at 724/42 */}
                 <div className="md:ps-7 md:border-l border-[#13243617]">
-                  <div className="relative mx-auto h-auto min-h-[21.2494rem] sm:min-h-[23.9056rem] lg:h-[26.0305rem] lg:mx-0 w-full max-w-full bg-[#132436] rounded-[1.0625rem] sm:rounded-[1.275rem] p-3 sm:p-4 md:p-6 flex flex-col items-center gap-3 sm:gap-4 md:gap-[1.5938rem]">
+                  <div className="relative mx-auto h-auto min-h-[16rem] sm:min-h-[23.9056rem] lg:h-[26.0305rem] lg:mx-0 w-full max-w-full bg-[#132436] rounded-[1.0625rem] sm:rounded-[1.275rem] p-3 sm:p-4 md:p-6 flex flex-col items-center gap-3 sm:gap-4 md:gap-[1.5938rem]">
                     {/* Top icon */}
                     <div
                       data-animate-item

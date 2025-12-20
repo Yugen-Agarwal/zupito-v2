@@ -88,11 +88,11 @@ const Productivity = () => {
                 </div>
 
                 {/* Bottom content block (sixth image) */}
-                <div className="px-9 md:px-9 lg:px-9 bg-white/0 rounded-b-[1.275rem]">
-                  <div className="flex flex-col gap-1">
+                <div className="px-5 sm:px-9 lg:px-9 bg-white/0 rounded-b-[1.275rem]">
+                  <div className="flex flex-col gap-1 items-center lg:items-start">
                     <div
                       data-animate-item
-                      className="inline-flex font-['Manrope'] items-center gap-[0.3188rem] rounded-[2.6562rem] bg-white px-3 py-2 h-[1.8063rem] w-fit text-[0.7438rem] font-bold text-[#132436] shadow-[0_0.0625rem_0_0_#0000000A]"
+                      className="inline-flex font-['Manrope'] items-center  gap-[0.3188rem] rounded-[2.6562rem] bg-white px-3 py-2 h-[1.8063rem] w-fit text-[0.7438rem] font-bold text-[#132436] shadow-[0_0.0625rem_0_0_#0000000A]"
                     >
                       <span className="w-2.5 h-2.5 rounded-full bg-[#5B7CF5]" />
                       <span>Type Something</span>
@@ -102,7 +102,7 @@ const Productivity = () => {
                       <h3
                         data-animate-item
                         style={{ transitionDelay: "0.12s" }}
-                        className="home-subtitle text-[#132436] font-['Inter']"
+                        className="home-subtitle text-[#132436] font-['Inter'] text-center lg:text-start"
                       >
                         Powerful Team, Management
                         <br className="hidden sm:block" />
@@ -117,7 +117,7 @@ const Productivity = () => {
                         <span>Success</span>
                       </h3>
 
-                      <div className="flex flex-col gap-2">
+                      <div className="flex flex-col gap-2 text-center lg:text-left">
                         <p
                           data-animate-item
                           style={{ transitionDelay: "0.18s" }}

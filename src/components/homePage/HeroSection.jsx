@@ -43,12 +43,12 @@ function HeroSection() {
                [@media(min-width:64rem)_and_(max-width:79.9375rem)]:min-h-[calc(100vh-7.5rem)] "
             >
               {/* Copy */}
-              <div className="max-w-full md:max-w-[600px] flex flex-col items-start sm:items-center md:items-start pt-4 sm:pt-8 md:pt-10 lg:pt-18 xl:pt-24">
+              <div className="max-w-full md:max-w-[600px] flex flex-col items-center sm:items-center md:items-start pt-4 sm:pt-8 md:pt-10 lg:pt-18 xl:pt-24">
                 <div className="w-full">
                   <h1
                     data-animate-item
                     style={{ transitionDelay: "0.05s" }}
-                    className="home-main-title text-[2rem] sm:text-[2.3rem] md:text-[2.5rem] lg:text-[2.8rem] xl:text-[3rem] leading-[1.08] text-[#132436] font-bold font-['Inter']"
+                    className="home-main-title text-center md:text-left text-[2rem] sm:text-[2.3rem] md:text-[2.5rem] lg:text-[2.8rem] xl:text-[3rem] leading-[1.08] text-[#132436] font-bold font-['Inter']"
                   >
                     {/* Line 1: AI Tool To Connect */}
                     <span className="block sm:whitespace-nowrap">
@@ -63,7 +63,7 @@ function HeroSection() {
                     </span>
 
                     {/* Line 2: Emails [badge] Instantly */}
-                    <span className="sm:whitespace-nowrap flex items-center flex-wrap mt-2">
+                    <span className="sm:whitespace-nowrap flex justify-center md:justify-start items-center flex-wrap mt-2">
                       <span>Emails</span>
                       <span className="inline-flex items-center justify-center mx-2 relative top-[-2px]">
                         <img
@@ -78,7 +78,7 @@ function HeroSection() {
                   <p
                     data-animate-item
                     style={{ transitionDelay: "0.15s" }}
-                    className="home-description text-[#546779] text-[14px] sm:text-[16px] md:text-[18px] leading-[1.65] font-['Manrope'] max-w-full sm:max-w-[26rem] mt-6 sm:mt-7"
+                    className="home-description text-center md:text-left text-[#546779] text-[14px] sm:text-[16px] md:text-[18px] leading-[1.65] font-['Manrope'] max-w-full md:max-w-[26rem] mt-6 sm:mt-7"
                   >
                     Simplify outreach with Zupitu's AI Email Verifier & Finder – validate emails, find business contacts, and boost deliverability.
                   </p>
@@ -87,7 +87,7 @@ function HeroSection() {
                 <div
                   data-animate-item
                   style={{ transitionDelay: "0.25s" }}
-                  className="flex flex-wrap items-center gap-4 sm:gap-5 md:gap-6 mt-9 sm:mt-10"
+                  className="flex flex-wrap justify-center md:justify-start items-center gap-4 sm:gap-5 md:gap-6 mt-9 sm:mt-10"
                 >
                   <button
                     data-hover="lift"
@@ -121,7 +121,7 @@ function HeroSection() {
                 <div className="mt-6 sm:mt-8 md:mt-10 mb-4 w-full max-w-[32.9365rem] h-px bg-linear-to-l from-transparent to-[#666666]/20" />
 
                 {/* Trust bullets */}
-                <div className="mt-2 sm:mt-4 md:mt-6 flex items-center gap-3 flex-wrap">
+                <div className="mt-2 sm:mt-4 md:mt-6 flex flex-wrap justify-center md:justify-start items-center gap-3">
                   <div
                     data-animate-item
                     style={{ transitionDelay: "0.35s" }}

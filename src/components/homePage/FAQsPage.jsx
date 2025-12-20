@@ -36,38 +36,38 @@ const FAQsPage = () => {
       style={{ background: 'var(--color-white-solid, #FFFFFF)' }}
     >
       {/* Outer container with responsive padding */}
-      <div className="home-container py-8 lg:py-10">
+      <div className="home-container py-2 lg:py-4">
         <div className="w-full mx-auto relative">
           {/* Header Section - max-width 85.125rem */}
           <div className="w-full">
             {/* FAQ Tag - width: 5.3125rem, height: 3.0625rem */}
             <div
               data-animate-item
-              className="inline-flex items-center justify-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#F6F6F6] px-3 py-2 h-[1.8063rem]"
+              className="inline-flex items-center justify-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#F6F6F6] px-3 py-2 h-[1.8063rem] mx-auto lg:mx-0 table"
             >
               <span className="w-2 h-2 rounded-full bg-[#3B82F6]" />
               <span className="text-[#132436] font-['Manrope'] font-bold text-[0.7438rem] leading-[100%] text-center">FAQ</span>
             </div>
 
             {/* Title Section - width: 85.125rem, height: 14.9375rem, justify-content: space-between */}
-            <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 lg:gap-[1.1156rem] !mt-2 h-auto">
+            <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between gap-6 lg:gap-[1.1156rem] !mt-4 lg:!mt-2 h-auto">
               {/* Left side - Title with icons - width: 35.5rem, height: 14.9375rem, gap: 1.3125rem */}
               <div className="flex-1 max-w-[30.1741rem]">
                 <h2
                   data-animate-item
                   style={{ transitionDelay: "0.08s" }}
-                  className="home-title text-[#132436] font-['Inter'] font-bold"
+                  className="home-title text-[#132436] font-['Inter'] font-bold text-center lg:text-left"
                 >
-                  <span className="inline-flex items-center gap-2">
+                  <span className="inline-flex items-center">
                     {/* Green Checkmark Icon */}
-                    <img src="/images/faq.svg" alt="" className="w-[2.1249rem] h-[2.1249rem] sm:w-[2.6562rem] sm:h-[2.6562rem] md:w-[3.3999rem] md:h-[3.3999rem] shrink-0" />
-                    Frequently
+                    <img src="/images/faq.svg" alt="" className="mr-3 w-[2.1249rem] h-[2.1249rem] sm:w-[2.6562rem] sm:h-[2.6562rem] md:w-[3.3999rem] md:h-[3.3999rem] shrink-0" />
+                    <span>Frequently</span>
                   </span>
                   <br className="hidden sm:block" />
-                  <span className="inline-flex items-center gap-2">
-                    Asked Questions
+                  <span className="inline-flex items-center">
+                    <span>Asked Questions</span>
                     {/* Purple Question Mark Icon */}
-                    <img src="/images/faq2.svg" alt="" className="w-[2.1249rem] h-[2.1249rem] sm:w-[2.6562rem] sm:h-[2.6562rem] md:w-[3.1874rem] md:h-[3.1874rem] shrink-0" />
+                    <img src="/images/faq2.svg" alt="" className="ml-3 w-[2.1249rem] h-[2.1249rem] sm:w-[2.6562rem] sm:h-[2.6562rem] md:w-[3.1874rem] md:h-[3.1874rem] shrink-0" />
                   </span>
                 </h2>
               </div>
@@ -77,7 +77,7 @@ const FAQsPage = () => {
                 <p
                   data-animate-item
                   style={{ transitionDelay: "0.15s" }}
-                  className="home-description text-[#546779] mb-8 lg:mb-[2.1249rem]"
+                  className="home-description text-[#546779] mb-4 lg:mb-[2.1249rem] text-center lg:text-left"
                 >
                   If you're new or looking for answers to your questions, this guide will help you learn more about our services and their features.
                 </p>
@@ -86,7 +86,7 @@ const FAQsPage = () => {
             </div>
 
             {/* FAQ Items Section */}
-            <div className="w-full mt-10 lg:mt-16">
+            <div className="w-full mt-6 lg:mt-16">
               {faqs.map((faq, index) => (
                 <div
                   key={index}
@@ -101,7 +101,7 @@ const FAQsPage = () => {
                     onClick={() => toggleFAQ(index)}
                   >
                     <div className="flex-1 pr-4">
-                      <h3 className="text-[20.4px] font-semibold text-[#132436] font-['Manrope'] capitalize">
+                      <h3 className="text-[1.15rem] sm:text-[1.275rem] font-bold text-[#132436] font-['Manrope'] capitalize">
                         {index + 1}. {faq.question}
                       </h3>
                     </div>
@@ -134,7 +134,7 @@ const FAQsPage = () => {
                       }`}
                   >
                     <div className="px-6 lg:px-[2.1249rem] pb-8 lg:pb-12">
-                      <p className="text-[0.85rem] sm:text-[0.9563rem] font-normal text-[#747C9A] font-['Manrope'] max-w-full">
+                      <p className="text-[0.9375rem] sm:text-[1rem] font-normal text-[#747C9A] font-['Manrope'] max-w-full leading-relaxed">
                         {faq.answer}
                       </p>
                     </div>
