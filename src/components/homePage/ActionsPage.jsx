@@ -103,9 +103,7 @@ const ActionsPage = () => {
                       data-animate-item
                       className="actionpage-description text-[#546779] font-['Manrope'] text-[18px]"
                     >
-                      Verify up to 10 emails instantly without sign-up. Explore
-                      bulk validation, history, and full platform features with
-                      unlimited access.
+                      Verify up to 10 emails instantly without sign-up just enter an email, click Verify, and repeat. Explore bulk validation, verification history, and all platform features with unlimited access and no credits required..
                     </p>
                   </div>
 
