@@ -34,7 +34,7 @@ const EmailFinder = () => {
 
                   {/* Fourth image (bottom description panel) */}
                   <div className="w-full bg-[#FCFCFD] rounded-b-[1.275rem] py-4 px-7 flex-1 flex flex-col">
-                    <div className="max-w-[39.8426rem] gap-7 mx-auto flex flex-col justify-between h-full">
+                    <div className="gap-7 flex flex-col justify-between h-full">
                       <p className="home-description-emailfinder text-[#546779] font-['Manrope']">
                         Beyond Opt-In mail list, email finder is a one of the
                         most reliable sources of building a deliverable list.
@@ -80,7 +80,7 @@ const EmailFinder = () => {
                       List Building With Reliable Email Finder
                     </h3>
 
-                    <div className="w-full max-w-[37.1864rem] mx-auto flex flex-col items-center gap-2">
+                    <div className="w-full max-w-[37.1864rem] mx-auto flex flex-col items-center gap-2 lg:gap-6">
                       {[
                         "Check domain status",
                         "Verified business emails",
@@ -92,7 +92,7 @@ const EmailFinder = () => {
                           key={label}
                           data-animate-item
                           style={{ transitionDelay: `${0.15 + idx * 0.08}s` }}
-                          className="w-full h-[3.0812rem] bg-white rounded-[0.5313rem] shadow-[0_0.5rem_1.25rem_0_#00000012] px-3 flex items-center gap-4"
+                          className="w-full bg-white rounded-[0.5313rem] shadow-[0_0.5rem_1.25rem_0_#00000012] px-3 flex items-center gap-4 py-2"
                         >
                           <span className="inline-flex items-center justify-center min-w-[2.0187rem] min-h-[2.0187rem] rounded-[0.5313rem] bg-[#F6F6F7]">
                             <img

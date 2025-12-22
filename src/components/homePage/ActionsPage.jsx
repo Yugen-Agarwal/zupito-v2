@@ -103,7 +103,7 @@ const ActionsPage = () => {
 
                     <p
                       data-animate-item
-                      className="actionpage-description text-[#546779] max-w-[30rem]"
+                      className="actionpage-description text-[#546779] pr-1.5"
                     >
                       Verify up to 10 emails instantly without sign-up. Enter an
                       email, click Verify, and repeat. Explore bulk validation,
@@ -127,7 +127,7 @@ const ActionsPage = () => {
 
                 {/* ================= RIGHT ================= */}
                 <div className="lg:border-l lg:pl-7 border-[#13243617] flex items-center justify-center">
-                  <div className="bg-[#132436] rounded-xl p-6 flex flex-col items-center gap-5 text-center w-full max-w-[510px]">
+                  <div className="bg-[#132436] rounded-xl p-6 flex flex-col items-center gap-5 text-center w-full">
 
                     <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center">
                       <img
@@ -147,7 +147,7 @@ const ActionsPage = () => {
                       Check up to 10 emails for free — no sign-up required.
                     </p>
 
-                    <div className="w-full bg-white rounded-full flex items-center overflow-hidden border">
+                    <div className="w-full bg-white rounded-full flex items-center overflow-hidden border  max-w-[450px] mx-auto">
                       <input
                         type="email"
                         placeholder="Email Address..."
