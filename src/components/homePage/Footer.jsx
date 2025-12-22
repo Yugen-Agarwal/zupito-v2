@@ -90,23 +90,28 @@ const Footer = () => {
                   </div>
                 </div>
 
-                {/* Image Section - Positioned differently below md (768px) */}
-                <div className="w-full md:w-auto shrink-0 flex items-center justify-center md:justify-end mt-0 md:mt-0 relative">
+                {/* Image Section */}
+                <div className="w-full md:w-auto shrink-0 flex items-center justify-center md:justify-end relative">
                   <div
                     className="relative w-full flex items-center justify-center overflow-visible"
                     style={{ maxWidth: "clamp(200px, 35vw, 350px)" }}
                   >
+                    {/* Mobile Image */}
+                    <img
+                      src="/images/footer-image-responsive.png"
+                      alt="Promotional"
+                      className="block lg:hidden w-[180px] sm:w-[220px]"
+                    />
+
+                    {/* Desktop Image */}
                     <img
                       src="/images/footer-image.svg"
                       alt="Promotional"
-                      className="w-[180px] sm:w-[220px] md:w-full max-w-full relative md:relative"
-                      style={{
-                        position: 'relative',
-                        top: '0',
-                      }}
+                      className="hidden lg:block w-full max-w-full"
                     />
                   </div>
                 </div>
+
               </div>
             </div>
 

@@ -72,18 +72,14 @@ const ActionsPage = () => {
           <div className="w-full relative z-[1] mt-12 sm:mt-16 md:mt-10 lg:mt-15 top-8 sm:top-12 md:top-16 lg:top-24 h-auto lg:h-[30.3866rem] mb-8 sm:mb-12 md:mb-16 lg:mb-[5.3123rem]">
             <div className="bg-white rounded-[0.85rem] sm:rounded-[1.0625rem] shadow-[0_0.625rem_1.875rem_0_#0000001A] mx-auto h-full overflow-hidden w-full">
               {/* Desktop divider line at x=681, 30.75rem tall */}
-              {/* <div
-              aria-hidden="true"
-              className="hidden lg:block absolute left-1/2 -translate-x-1/2 inset-y-12 w-0 border-l lg:px-10! border-[#132436] opacity-10 pointer-events-none"
-            /> */}
-
+           
               <div className="relative h-auto lg:h-[30.3866rem] z-[1] grid grid-cols-1 p-4 sm:p-6 md:p-8 md:grid-cols-2 gap-6 md:gap-8 lg:gap-0 items-stretch">
                 {/* Left panel (copy) sized 561x451 at 3.75rem offset */}
                 <div className="relative rounded-[0.85rem]  flex flex-col justify-between gap-7">
                   <div className="flex flex-col gap-5 sm:pl-4">
                     <div
                       data-animate-item
-                      className="inline-flex items-center font-['Manrope'] justify-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#F0F3FF] px-3 sm:px-4 py-2 w-auto sm:w-[11.333rem] h-auto sm:h-[2.4437rem] text-[0.7438rem] sm:text-[0.85rem] md:text-[0.9563rem] leading-[100%] font-bold text-[#132436]"
+                      className="inline-flex items-center font-['Manrope'] justify-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#F0F3FF] px-3 sm:px-4 py-2 w-[11.333rem] h-auto sm:h-[2.4437rem] text-[0.7438rem] sm:text-[0.85rem] md:text-[0.9563rem] leading-[100%] font-bold text-[#132436]"
                     >
                       <div className="w-2.5 h-2.5 rounded-full bg-[#5B7CF5] inline-block"></div>
                       <div className="inline-block">Let's get in touch</div>
@@ -141,7 +137,7 @@ const ActionsPage = () => {
 
                 {/* Right panel (widget) sized 600x490 at 724/42 */}
                 <div className="md:ps-7 md:border-l border-[#13243617]">
-                  <div className="relative mx-auto h-auto min-h-[16rem] sm:min-h-[23.9056rem] lg:h-[26.0305rem] lg:mx-0 w-full max-w-full bg-[#132436] rounded-[1.0625rem] sm:rounded-[1.275rem] p-3 sm:p-4 md:p-6 flex flex-col items-center gap-3 sm:gap-4 md:gap-[1.5938rem]">
+                  <div className="relative mx-auto h-auto lg:mx-0 w-full max-w-full bg-[#132436] rounded-[1.0625rem] sm:rounded-[1.275rem] p-3 sm:p-4 md:p-6 flex flex-col items-center gap-3 sm:gap-4 md:gap-[1.5938rem]">
                     {/* Top icon */}
                     <div
                       data-animate-item
