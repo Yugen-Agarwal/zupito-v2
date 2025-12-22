@@ -16,16 +16,13 @@ const EmailFinder = () => {
           <div className="relative w-full bg-white overflow-hidden">
 
             {/* Two column responsive layout */}
-            <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-5 lg:gap-5">
-
-              {/* ================= LEFT (WIDER) ================= */}
-              <div className="w-full md:basis-[65%] md:flex-grow">
-                <div
-                  className="flex flex-col border-[#EEF0F3] border-solid border rounded-[1.275rem] h-full"
-                  data-animate-item
-                >
-                  {/* Top image */}
-                  <div className="relative w-full bg-[#F5F5F5] rounded-t-[1.275rem] pt-10 md:pt-[2.1249rem] px-4 sm:px-6 pb-6">
+            <div className="md:grid md:grid-cols-1 lg:grid-cols-5 items-stretch gap-6 md:gap-5 lg:gap-5">
+              {/* LEFT: second + fourth + fifth images combined */}
+              <div className="col-span-3 mb-4 md:mb-0 flex">
+                <div className="flex flex-col border-[#EEF0F3] border-solid border rounded-[1.275rem] w-full h-full" data-animate-item>
+                  {/* Second image area (feature chips panel) */}
+                  <div className="relative w-full bg-[#F5F5F5] rounded-t-[1.275rem] pt-10 sm:pt-10 md:pt-[2.1249rem] px-4 sm:px-6 pb-6">
+                    {/* Use provided image as-is (no manual chips) */}
                     <div className="w-full flex items-center justify-center">
                       <img
                         src="/images/container-v.svg"
@@ -35,8 +32,8 @@ const EmailFinder = () => {
                     </div>
                   </div>
 
-                  {/* Bottom description */}
-                  <div className="w-full bg-[#FCFCFD] rounded-b-[1.275rem] py-4 px-7 flex-1">
+                  {/* Fourth image (bottom description panel) */}
+                  <div className="w-full bg-[#FCFCFD] rounded-b-[1.275rem] py-4 px-7 flex-1 flex flex-col">
                     <div className="max-w-[39.8426rem] gap-7 mx-auto flex flex-col justify-between h-full">
                       <p className="home-description-emailfinder text-[#546779] font-['Manrope']">
                         Beyond Opt-In mail list, email finder is a one of the
@@ -60,10 +57,10 @@ const EmailFinder = () => {
                 </div>
               </div>
 
-              {/* ================= RIGHT (NARROWER) ================= */}
-              <div className="w-full md:basis-[35%] md:flex-grow-0">
+              {/* RIGHT: sixth image background with list */}
+              <div className="col-span-2 w-full flex">
                 <div
-                  className="relative p-4 sm:p-5 md:p-6 rounded-[1.275rem] border-[#EEF0F3] border-solid border h-full"
+                  className="relative w-full h-full min-h-auto lg:min-h-auto p-4 sm:p-5 md:p-6 rounded-[1.275rem] border-[#EEF0F3] border-solid border"
                   data-animate-item
                   style={{ transitionDelay: "0.15s" }}
                 >

@@ -57,7 +57,7 @@ const EmailsVerified = () => {
             >
               {/* Image section — grows naturally */}
               <div
-                className="flex-1 flex items-center justify-center"
+                className="flex-1 flex items-center justify-center min-h-0 overflow-hidden"
                 data-animate-item
                 style={{ transitionDelay: "0.25s" }}
               >
@@ -70,7 +70,7 @@ const EmailsVerified = () => {
 
               {/* Bottom content — auto height */}
               <div
-                className="w-full rounded-b-[1.275rem] bg-[#F9F9F8] px-6 py-4 flex flex-col"
+                className="w-full rounded-b-[1.275rem] bg-[#F9F9F8] px-6 py-4 flex flex-col flex-shrink-0"
                 data-animate-item
                 style={{ transitionDelay: "0.3s" }}
               >
