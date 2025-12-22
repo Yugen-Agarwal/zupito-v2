@@ -62,7 +62,7 @@ function Header() {
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={toggleProductDropdown}
-                className="flex items-center gap-1 text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none"
+                className="flex items-center gap-1 text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold lg:text-[14px] xl:text-[15.3px] leading-none"
               >
                 Product
                 <svg
@@ -112,20 +112,20 @@ function Header() {
 
             <Link
               to="/use-cases"
-              className="text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none "
+              className="text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold lg:text-[14px] xl:text-[15.3px] leading-none "
             >
               Use Cases
             </Link>
 
             <Link
               to="/pricing"
-              className="text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none"
+              className="text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold lg:text-[14px] xl:text-[15.3px] leading-none"
             >
               Pricing
             </Link>
 
             <button
-              className="flex items-center gap-1 text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none"
+              className="flex items-center gap-1 text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold lg:text-[14px] xl:text-[15.3px] leading-none"
             >
               Resources
               <svg
@@ -140,14 +140,14 @@ function Header() {
 
             <a
               href="#blog"
-              className="text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none"
+              className="text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold lg:text-[14px] xl:text-[15.3px] leading-none"
             >
               Blog
             </a>
 
             <Link
               to="/deals"
-              className="text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none"
+              className="text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold lg:text-[14px] xl:text-[15.3px] leading-none"
             >
               Deals
             </Link>
@@ -165,7 +165,7 @@ function Header() {
                 className="w-5 h-5"
               />
               <span
-                className="text-[#132436] whitespace-nowrap text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none "
+                className="text-[#132436] whitespace-nowrap lg:text-[14px] xl:text-[15.3px] leading-none "
                 style={{ fontFamily: 'Manrope', fontWeight: 600, lineHeight: '100%' }}
               >
                 Start for Free
@@ -177,7 +177,7 @@ function Header() {
               className="flex lg:w-[159.5px] lg:h-[48px] px-5 py-4 gap-1.5 items-center justify-center transition-colors rounded-[42.5px] bg-[#EB3609] hover:bg-[#FF6B35]"
             >
               <span
-                className="text-white whitespace-nowrap text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none "
+                className="text-white whitespace-nowrap lg:text-[14px] xl:text-[15.3px] leading-none "
                 style={{ fontFamily: 'Manrope', fontWeight: 600, lineHeight: '100%' }}
               >
                 Log In
@@ -379,8 +379,8 @@ function Header() {
                     className="w-5 h-5"
                   />
                   <span
-                    className="text-[#132436] whitespace-nowrap"
-                    style={{ fontFamily: 'Manrope', fontWeight: 700, fontSize: '15.3px', lineHeight: '110%' }}
+                    className="text-[#132436] whitespace-nowrap lg:text-[14px] xl:text-[15.3px]"
+                    style={{ fontFamily: 'Manrope', fontWeight: 700 , lineHeight: '110%' }}
                   >
                     Start for Free
                   </span>
@@ -392,13 +392,12 @@ function Header() {
                   className="flex items-center justify-center transition-colors rounded-[42.5px] bg-[#EB3609] hover:bg-[#FF6B35] w-full"
                   style={{
                     height: '40.8px',
-                    padding: '10.2px 23.8px',
                     gap: '8.5px'
                   }}
                 >
                   <span
-                    className="text-white whitespace-nowrap"
-                    style={{ fontFamily: 'Manrope', fontWeight: 700, fontSize: '15.3px', lineHeight: '110%' }}
+                    className="text-white whitespace-nowrap lg:text-[14px] xl:text-[15.3px]"
+                    style={{ fontFamily: 'Manrope', fontWeight: 700, lineHeight: '110%' }}
                   >
                     Log In
                   </span>
