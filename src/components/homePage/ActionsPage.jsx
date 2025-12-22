@@ -70,10 +70,10 @@ const ActionsPage = () => {
 
           {/* Card container (desktop exact sizing as provided) */}
           <div className="w-full relative z-[1] mt-12 sm:mt-16 md:mt-10 lg:mt-15 top-8 sm:top-12 md:top-16 lg:top-24 h-auto lg:h-[30.3866rem] mb-8 sm:mb-12 md:mb-16 lg:mb-[5.3123rem]">
-            <div className="bg-white rounded-[0.85rem] sm:rounded-[1.0625rem] shadow-[0_0.625rem_1.875rem_0_#0000001A] mx-auto h-full overflow-hidden w-full">
+            <div className="bg-white rounded-[0.85rem] sm:rounded-[1.0625rem] shadow-[0_0.625rem_1.875rem_0_#0000001A] mx-auto  overflow-hidden w-full">
               {/* Desktop divider line at x=681, 30.75rem tall */}
            
-              <div className="relative h-auto lg:h-[30.3866rem] z-[1] grid grid-cols-1 p-4 sm:p-6 md:p-8 md:grid-cols-2 gap-6 md:gap-8 lg:gap-0 items-stretch">
+              <div className="relative h-auto z-[1] grid grid-cols-1 p-4 sm:p-6 md:p-8 md:grid-cols-2 gap-6 md:gap-8 lg:gap-0 ">
                 {/* Left panel (copy) sized 561x451 at 3.75rem offset */}
                 <div className="relative rounded-[0.85rem]  flex flex-col justify-between gap-7">
                   <div className="flex flex-col gap-5 sm:pl-4">
@@ -251,9 +251,6 @@ const ActionsPage = () => {
 
                       </div>
                     </div>
-
-                    {/* bottom spacing */}
-                    {/* <div className="mb-4" /> */}
                   </div>
                 </div>
               </div>

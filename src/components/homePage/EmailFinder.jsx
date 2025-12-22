@@ -10,12 +10,12 @@ const EmailFinder = () => {
       className="relative w-full bg-white overflow-hidden"
     >
       {/* Outer container - follow ActionsPage spacing rhythm */}
-      <div className="home-container py-10 lg:py-16">
+      <div className="home-container pb-10 lg:pb-16">
         <div className="w-full h-auto mx-auto">
           {/* First image: overall card container */}
           <div className="relative w-full bg-white  overflow-hidden">
             {/* Two column responsive layout */}
-            <div className="md:grid md:grid-cols-1 lg:grid-cols-5 items-stretch gap-6 md:gap-5 lg:gap-5">
+            <div className="flex flex flex-col md:flex-row items-stretch gap-6 md:gap-5 lg:gap-5">
               {/* LEFT: second + fourth + fifth images combined */}
               <div className="col-span-3 mb-4 md:mb-0">
                 <div className="flex flex-col border-[#EEF0F3] border-solid border rounded-[1.275rem]" data-animate-item>

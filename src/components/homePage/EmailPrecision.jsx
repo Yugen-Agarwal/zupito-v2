@@ -14,7 +14,7 @@ const EmailPrecision = () => {
       <div className="home-container py-8 lg:py-12">
         <div className="mx-auto relative">
 
-          <div className="w-full flex flex-col lg:flex-row lg:justify-between lg:items-center gap-[0.3188rem] md:gap-[0.425rem] lg:gap-[0.5313rem]">
+          <div className="w-full flex flex-col xl:flex-row lg:justify-between lg:items-center gap-[0.3188rem] md:gap-[0.425rem] lg:gap-[0.5313rem]">
 
             {/* LEFT SIDE - NOW AUTO WIDTH */}
             <div className="w-full lg:w-auto flex flex-col gap-[0.2125rem] text-center lg:text-left">
