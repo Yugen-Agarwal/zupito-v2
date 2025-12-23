@@ -76,7 +76,7 @@ const ActionsPage = () => {
 
                 {/* ================= LEFT ================= */}
                 <div className="flex flex-col justify-between gap-8 lg:py-4">
-                  <div className="space-y-5 sm:pl-4">
+                  <div className="space-y-5 sm:px-4">
 
                     <div
                       data-animate-item
