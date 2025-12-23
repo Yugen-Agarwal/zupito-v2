@@ -102,7 +102,7 @@ const Productivity = () => {
                       <h3
                         data-animate-item
                         style={{ transitionDelay: "0.12s" }}
-                        className="home-subtitle text-[#132436] font-['Inter'] text-center lg:text-start"
+                        className="text-[#132436] font-['Inter'] font-semibold text-center lg:text-start leading-tight text-[1.35rem] sm:text-[1.6rem] md:text-[1.85rem] lg:text-[2.05rem]"
                       >
                         Powerful Team, Management
                         <br className="hidden sm:block" />
@@ -111,7 +111,7 @@ const Productivity = () => {
                           <img
                             src="/images/Success.svg"
                             alt=""
-                            className="w-[1.275rem] h-[1.275rem] sm:w-[1.9124rem] sm:h-[1.9124rem] md:w-[2.9749rem] md:h-[2.9749rem] mx-1.5"
+                            className="w-[1.275rem] h-[1.275rem] sm:w-[1.9124rem] sm:h-[1.9124rem] md:w-[2.9749rem] md:h-[2.9749rem] mx-2"
                           />
                         </span>
                         <span>Success</span>

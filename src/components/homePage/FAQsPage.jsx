@@ -36,7 +36,8 @@ const FAQsPage = () => {
       style={{ background: 'var(--color-white-solid, #FFFFFF)' }}
     >
       {/* Outer container with responsive padding */}
-      <div className="home-container py-2 lg:py-4">
+      {/* <div className="w-full mx-auto" style={{ maxWidth: '1160px' }}> */}
+        <div className="home-container py-10 sm:py-12 md:py-16 lg:py-20 xl:py-24">
         <div className="w-full mx-auto relative">
           {/* Header Section - max-width 85.125rem */}
           <div className="w-full">
@@ -76,8 +77,8 @@ const FAQsPage = () => {
               <div className="flex-1 max-w-[568px]">
                 <p
                   data-animate-item
-                  style={{ transitionDelay: "0.15s" }}
-                  className="home-description text-[#546779] mb-4 lg:mb-[2.1249rem] text-center lg:text-left"
+                  style={{ transitionDelay: "0.15s", color: "#546779", fontWeight: 400 }}
+                  className="home-description mb-4 lg:mb-[2.1249rem] text-center lg:text-left"
                 >
                   If you're new or looking for answers to your questions, this guide will help you learn more about our services and their features.
                 </p>
@@ -101,7 +102,7 @@ const FAQsPage = () => {
                     onClick={() => toggleFAQ(index)}
                   >
                     <div className="flex-1 pr-4">
-                      <h3 className="text-[1.15rem] sm:text-[1.275rem] font-bold text-[#132436] font-['Manrope'] capitalize">
+                      <h3 className="text-[0.95rem] sm:text-[1.05rem] md:text-[1.1rem] font-bold text-[#132436] font-['Manrope'] capitalize">
                         {index + 1}. {faq.question}
                       </h3>
                     </div>
@@ -133,7 +134,7 @@ const FAQsPage = () => {
                     className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-[26.5617rem] opacity-100' : 'max-h-0 opacity-0'
                       }`}
                   >
-                    <div className="px-6 lg:px-[2.1249rem] pb-8">
+                    <div className="px-6 lg:px-[2.1249rem]">
                       <p className="text-[0.9375rem] sm:text-[1rem] font-normal text-[#747C9A] font-['Manrope'] max-w-full leading-relaxed">
                         {faq.answer}
                       </p>
@@ -145,7 +146,8 @@ const FAQsPage = () => {
 
           </div>
         </div>
-      </div>
+        </div>
+      {/* </div> */}
     </section>
   )
 }

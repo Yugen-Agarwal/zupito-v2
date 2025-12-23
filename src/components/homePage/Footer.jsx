@@ -11,7 +11,7 @@ const Footer = () => {
         data-animate="fade-up"
         className="relative w-full overflow-hidden bg-transparent"
       >
-        <div className="mx-auto max-w-[1800px] px-4 flex justify-center py-6! sm:py-6! md:py-6!">
+        <div className="mx-auto max-w-[1800px] px-4 flex justify-center">
           <div
             className="relative w-full max-w-full mx-auto rounded-[24px] overflow-hidden bg-no-repeat bg-cover bg-center"
             style={{
@@ -21,9 +21,9 @@ const Footer = () => {
               opacity: 1,
             }}
           >
-            <div className="w-full flex justify-center px-6 overflow-visible">
+            <div className="w-full flex justify-center  overflow-visible">
               <div
-                className="w-full h-full px-4! sm:px-6! md:px-10! lg:px-14! xl:px-22! 2xl:px-[130px]! py-8 sm:py-10 md:py-12 lg:py-14 flex flex-col md:flex-row items-center justify-start pb-0!"
+                className="w-full h-full px-6! sm:px-8! md:px-12! lg:px-16! xl:px-24! 2xl:px-32! pt-6! sm:pt-8! md:pt-12! lg:pt-16! xl:pt-24! 2xl:pt-32! flex flex-col md:flex-row items-center justify-start pb-0!"
                 style={{ zIndex: 2 }}
               >
                 {/* Text Content Section */}
@@ -115,13 +115,13 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-4 px-6! sm:px-8! md:px-12! lg:px-16! xl:px-24! 2xl:px-[150px]!">
+            <div className="flex flex-col gap-4 px-6! sm:px-8! md:px-12! lg:px-16! xl:px-24! 2xl:px-32!">
               <div className="w-full max-w-full mx-auto mt-6! md:mt-8! lg:mt-12! flex flex-col lg:flex-row gap-4">
-                <div className="flex-1 rounded-[16px] bg-[#1C2D3E] py-2! md:py-4! px-8! flex flex-col gap-4! md:gap-6!">
-                  <div className="text-white font-extrabold text-[28px] sm:text-[34px] md:text-[40px] leading-[100%]">
+                <div className="flex-1 rounded-[16px] bg-[#1C2D3E] py-3! md:py-5! px-8! flex flex-col gap-5! md:gap-7!">
+                  <div className="text-white font-extrabold text-[30px] sm:text-[36px] md:text-[42px] leading-[110%]">
                     Zupitu
                   </div>
-                  <p className="text-white text-[14px] lg:text-[16px] sm:text-[16px] md:text-[16px] leading-[28px] md:leading-[34px] max-w-[722px] font-['Manrope']">
+                  <p className="text-[#546779] text-[15px] sm:text-[17px] md:text-[19px] lg:text-[20px] leading-[28px] md:leading-[32px] max-w-[760px] font-['Manrope']">
                     From dynamic visuals to interactive features, our software
                     empowers you to craft a website tailored to every need.
                   </p>
@@ -144,7 +144,7 @@ const Footer = () => {
                           className="w-12 h-12 object-contain"
                         />
                       </div>
-                      <div className="text-white text-[16px] md:text-[16px]">
+                      <div className="text-[#546779] text-[15px] sm:text-[17px] md:text-[19px] lg:text-[20px]">
                         {s.label}
                       </div>
                     </div>
@@ -153,7 +153,7 @@ const Footer = () => {
               </div>
 
               <div className="w-full max-w-full mx-auto rounded-[16px] bg-[#1C2D3E] px-6! md:px-[52px]! py-8! md:py-[50px]!">
-                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-[60px] text-white">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 lg:gap-14 text-white">
                   {[
                     {
                       title: "Product",
@@ -174,15 +174,15 @@ const Footer = () => {
                     },
                     { title: "Company", items: ["Terms", "Contact Us"] },
                   ].map((col) => (
-                    <div key={col.title} className="flex flex-col gap-4">
-                      <h3 className="font-bold text-[14px] sm:text-[16px] md:text-[20px] tracking-[-0.32px] capitalize">
+                    <div key={col.title} className="flex flex-col gap-5 md:gap-6">
+                      <h3 className="font-bold text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] tracking-[-0.32px] capitalize">
                         {col.title}
                       </h3>
-                      <ul className="flex flex-col gap-3 md:gap-4 opacity-90">
+                      <ul className="flex flex-col gap-4 md:gap-5 opacity-90">
                         {col.items.map((it) => (
                           <li
                             key={it}
-                            className="text-[14px] lg:text-[16px] leading-[100%] cursor-pointer"
+                            className="text-[16px] sm:text-[17px] md:text-[18px] lg:text-[19px] leading-[130%] cursor-pointer"
                           >
                             {it}
                           </li>
