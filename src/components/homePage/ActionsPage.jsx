@@ -153,7 +153,7 @@ const ActionsPage = () => {
                         placeholder="Email Address..."
                         className="flex-1 px-4 py-4 text-sm outline-none"
                       />
-                      <button className="bg-[#EB3609] hover:bg-[#FF6B35] text-white font-semibold px-6 py-3 rounded-full mr-1 transition-colors">
+                      <button className="bg-[#EB3609] hover:bg-[#FF6B35] text-white font-semibold px-6 py-2.5 rounded-full mr-1 transition-colors">
                         Verify Now
                       </button>
                     </div>
