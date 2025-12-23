@@ -160,7 +160,7 @@ function HeroSection() {
 
               {/* Mobile Divider */}
               <div className="block md:hidden mt-8 w-full h-px bg-gray-200" />
-
+              
               {/* Image - Right Side 50% */}
               <div
                 data-animate-item="scale"
@@ -171,7 +171,7 @@ function HeroSection() {
                   <img
                     src="/images/Frame 1321317782.png"
                     alt="Zupito email automation flow"
-                    className="w-auto max-h-[670px] [@media(min-width:1500px)]:max-h-[750px] max-w-full"
+                    className="w-auto max-h-[670px]  max-w-full"
                   />
                 </div>
               </div>
