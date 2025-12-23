@@ -80,7 +80,7 @@ const EmailFinder = () => {
                       List Building With Reliable Email Finder
                     </h3>
 
-                    <div className="w-full max-w-[37.1864rem] mx-auto flex flex-col items-center gap-2 lg:gap-6">
+                    <div className="w-full max-w-[37.1864rem] mx-auto flex flex-col items-center gap-2 2xl:gap-6">
                       {[
                         "Check domain status",
                         "Verified business emails",

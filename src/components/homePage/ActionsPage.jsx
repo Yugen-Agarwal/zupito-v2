@@ -72,10 +72,10 @@ const ActionsPage = () => {
           <div className="relative z-10 mt-16 lg:mt-24 mb-16">
             <div className="bg-white rounded-xl shadow-xl overflow-hidden">
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-0 p-4 sm:p-6 md:p-8 items-stretch">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-0 p-4 sm:p-6 md:p-8">
 
                 {/* ================= LEFT ================= */}
-                <div className="flex flex-col justify-between gap-8">
+                <div className="flex flex-col justify-between gap-8 lg:py-4">
                   <div className="space-y-5 sm:pl-4">
 
                     <div
@@ -114,7 +114,7 @@ const ActionsPage = () => {
 
                   <button
                     data-hover="lift"
-                    className="inline-flex items-center gap-2 font-bold text-[#EB3609] font-['Manrope'] text-lg pl-4 mb-6"
+                    className="inline-flex items-center gap-2 font-bold text-[#EB3609] font-['Manrope'] text-lg pl-4"
                   >
                     Checkout Our Deals
                     <img
@@ -126,8 +126,8 @@ const ActionsPage = () => {
                 </div>
 
                 {/* ================= RIGHT ================= */}
-                <div className="lg:border-l lg:pl-7 border-[#13243617] flex items-center justify-center">
-                  <div className="bg-[#132436] rounded-xl p-6 flex flex-col items-center gap-5 text-center w-full">
+                <div className="lg:border-l lg:pl-7 border-[#13243617] flex items-center justify-center lg:py-4">
+                  <div className="bg-[#132436] rounded-xl px-6 py-8 lg:py-10 flex flex-col items-center gap-5 text-center w-full max-w-[500px]">
 
                     <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center">
                       <img
@@ -147,7 +147,7 @@ const ActionsPage = () => {
                       Check up to 10 emails for free — no sign-up required.
                     </p>
 
-                    <div className="w-full bg-white rounded-full flex items-center overflow-hidden border  max-w-[450px] mx-auto">
+                    <div className="w-full bg-white rounded-full flex items-center overflow-hidden border max-w-[450px] mx-auto">
                       <input
                         type="email"
                         placeholder="Email Address..."
