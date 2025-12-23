@@ -92,7 +92,7 @@ const EmailFinderWorks = () => {
 
           {/* Three different cards with background image per card */}
           <div className="relative flex justify-center bottom-0 lg:-bottom-40 !mb-8 md:!mb-12 lg:!mb-[7.4373rem]">
-            <div className="relative mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1.275rem] md:gap-[1.3813rem] lg:gap-[1.5406rem] w-full overflow-visible">
+            <div className="relative mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 w-full overflow-visible">
               {steps.map((step, idx) => {
                 const baseDelay = 0.1 + idx * 0.08
                 return (
@@ -114,7 +114,7 @@ const EmailFinderWorks = () => {
                       style={{ transitionDelay: `${baseDelay + 0.05}s` }}
                     >
                       <div className="email-works-number inline-flex items-center justify-center w-[2.8687rem] h-[2.2312rem] rounded-[0.3188rem] bg-white shadow-[0_0.125rem_0.375rem_#00000012]">
-                        <span className="text-[#132436] font-['Inter'] font-bold text-[0.9563rem] md:text-[1.1688rem] tracking-[-0.2rem]">
+                        <span className="text-[#132436] font-['Inter'] font-bold text-[0.9563rem] md:text-[1.1688rem] tracking-[-0.05rem]">
                           {step.number}
                         </span>
                       </div>

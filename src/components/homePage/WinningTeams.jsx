@@ -99,7 +99,7 @@ const WinningTeams = () => {
                   {card.title}
                 </div>
 
-                <p className="text-sm text-white/80 whitespace-pre-line font-['Manrope'] leading-relaxed">
+                <p className="text-sm sm:text-base text-white/80 whitespace-pre-line font-['Manrope'] leading-loose">
                   {card.desc}
                 </p>
               </div>
