@@ -58,7 +58,7 @@ function Header() {
           </div>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center gap-4 xl:gap-8 relative px-4">
+          <nav className="hidden [@media(min-width:1028px)]:flex items-center gap-4 xl:gap-8 relative px-4">
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={toggleProductDropdown}
@@ -154,7 +154,7 @@ function Header() {
           </nav>
 
           {/* Desktop Action Buttons */}
-          <div className="hidden lg:flex items-center shrink-0 gap-5 xl:gap-3">
+          <div className="hidden [@media(min-width:1028px)]:flex items-center shrink-0 gap-5 xl:gap-3">
             {/* Start for Free Button */}
             <button
               className="flex items-center lg:w-[159.5px] lg:h-[48px] px-4 sm:px-5 py-2 sm:py-3 lg:py-4 rounded-[34px] bg-[#F6F6F6] hover:bg-[#EEEEEE]"
@@ -193,7 +193,7 @@ function Header() {
           {/* Hamburger Menu Button - Mobile/Tablet */}
           <button
             onClick={toggleMobileMenu}
-            className="lg:hidden flex items-center justify-center w-10 h-10 text-gray-800 hover:text-[#FF6B35] transition-colors"
+            className="[@media(min-width:1028px)]:hidden flex items-center justify-center w-10 h-10 text-gray-800 hover:text-[#FF6B35] transition-colors"
             aria-label="Toggle menu"
           >
             {/* Hamburger icon */}
