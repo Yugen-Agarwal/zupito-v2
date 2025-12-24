@@ -10,7 +10,7 @@ const EmailsVerified = () => {
       data-animate="fade-up"
       className="relative w-full bg-white overflow-hidden"
     >
-      <div className="home-container py-3 lg:py-4 pt-0!">
+      <div className="home-container py-2 lg:py-3 pt-0!">
         <div className="w-full mx-auto relative">
           <div className="w-full mx-auto flex flex-col md:flex-row gap-2 md:gap-3">
 
