@@ -75,7 +75,7 @@ const WinningTeams = () => {
 
           {/* Cards */}
           <div
-            className="mt-4 xl:mt-40 grid grid-cols-2 max-[450px]:grid-cols-1 w-full max-w-[95%] sm:max-w-[92%] md:max-w-[90%] lg:max-w-[88%] xl:max-w-[85%] 2xl:max-w-[82%] xl:grid-cols-4 gap-6 mx-auto justify-items-stretch"
+            className="mt-4 xl:mt-40 grid grid-cols-2 max-[450px]:grid-cols-1 w-full max-w-[95%] sm:max-w-[92%] md:max-w-[90%] lg:max-w-[88%] xl:max-w-[85%] 2xl:max-w-[82%] xl:grid-cols-4 gap-2 lg:gap-3 mx-auto justify-items-stretch"
           >
 
             {cards.map((card, idx) => (

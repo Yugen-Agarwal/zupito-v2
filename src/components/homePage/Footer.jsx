@@ -127,7 +127,7 @@ const Footer = () => {
                   </p>
                 </div>
 
-                <div className="w-full lg:w-auto grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 gap-4">
+                <div className="w-full lg:w-auto grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 gap-2 lg:gap-3">
                   {[
                     { label: "Facebook", icon: "/images/FB.svg" },
                     { label: "Linked In", icon: "/images/Linkedin.svg" },
@@ -135,7 +135,7 @@ const Footer = () => {
                   ].map((s) => (
                     <div
                       key={s.label}
-                      className="rounded-[16px] bg-[#1C2D3E] flex flex-col items-center justify-center gap-4 p-6! cursor-pointer"
+                      className="rounded-[16px] bg-[#1C2D3E] flex flex-col items-center justify-center gap-4 p-4 sm:p-6 cursor-pointer"
                     >
                       <div className="w-[37.5px] h-[37.5px] rounded-full flex items-center justify-center">
                         <img
