@@ -92,7 +92,7 @@ const EmailFinderWorks = () => {
 
           {/* Three different cards with background image per card */}
           <div className="relative flex justify-center bottom-0 lg:-bottom-40 !mb-8 md:!mb-12 lg:!mb-[7.4373rem]">
-            <div className="relative mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-3 w-full overflow-visible">
+            <div className="relative mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-3 w-full overflow-visible pb-2">
               {steps.map((step, idx) => {
                 const baseDelay = 0.1 + idx * 0.08
                 return (
