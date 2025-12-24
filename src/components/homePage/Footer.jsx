@@ -121,7 +121,7 @@ const Footer = () => {
                   <div className="text-white font-extrabold text-[30px] sm:text-[36px] md:text-[42px] leading-[110%]">
                     Zupitu
                   </div>
-                  <p className="text-[#546779] text-[15px] sm:text-[17px] md:text-[19px] lg:text-[20px] leading-[28px] md:leading-[32px] max-w-[760px] font-['Manrope']">
+                  <p className="text-[#546779] text-[15px] sm:text-[18px] leading-[28px] md:leading-[32px] max-w-[760px] font-['Manrope']">
                     From dynamic visuals to interactive features, our software
                     empowers you to craft a website tailored to every need.
                   </p>
@@ -144,7 +144,7 @@ const Footer = () => {
                           className="w-12 h-12 object-contain"
                         />
                       </div>
-                      <div className="text-[#546779] text-[15px] sm:text-[17px] md:text-[19px] lg:text-[20px]">
+                      <div className="text-[#546779] text-[15px] sm:text-[18px]">
                         {s.label}
                       </div>
                     </div>
@@ -175,14 +175,14 @@ const Footer = () => {
                     { title: "Company", items: ["Terms", "Contact Us"] },
                   ].map((col) => (
                     <div key={col.title} className="flex flex-col gap-5 md:gap-6">
-                      <h3 className="font-bold text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] tracking-[-0.32px] capitalize">
+                      <h3 className="font-bold text-[16px] sm:text-[18px] md:text-[20px]tracking-[-0.32px] capitalize">
                         {col.title}
                       </h3>
                       <ul className="flex flex-col gap-4 md:gap-5 opacity-90">
                         {col.items.map((it) => (
                           <li
                             key={it}
-                            className="text-[16px] sm:text-[17px] md:text-[18px] lg:text-[19px] leading-[130%] cursor-pointer"
+                            className="text-[16px] sm:text-[17px] md:text-[18px] leading-[130%] cursor-pointer"
                           >
                             {it}
                           </li>
