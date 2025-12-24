@@ -48,7 +48,7 @@ const Productivity = () => {
               <p
                 data-animate-item
                 style={{ transitionDelay: "0.15s" }}
-                className="home-description text-[#546779] font-['Manrope'] max-w-[500px] text-[20.4px] mx-auto lg:mx-0"
+                className="home-description text-[#546779] font-['Manrope'] max-w-[550px] text-[20.4px] mx-auto lg:mx-0"
               >
                 Zupitu's user-friendly interface simplifies prospecting with
                 intuitive tools for high-quality data generation.
@@ -56,7 +56,7 @@ const Productivity = () => {
               <p
                 data-animate-item
                 style={{ transitionDelay: "0.22s" }}
-                className="home-description  text-[#546779] font-['Manrope'] text-[20.4px] mx-auto lg:mx-0 max-w-[500px]"
+                className="home-description  text-[#546779] font-['Manrope'] text-[20.4px] mx-auto lg:mx-0 max-w-[550px]"
               >
                 It supports seamless team collaboration, easily handles large
                 data volumes, and offers cost-effective scalability for growing
@@ -83,7 +83,7 @@ const Productivity = () => {
                   <img
                     src="/images/productivity-frame.png"
                     alt="Productivity frame"
-                    className="w-full h-auto select-none pointer-events-none"
+                    className="w-full h-auto max-h-[400px] select-none pointer-events-none"
                   />
                 </div>
 

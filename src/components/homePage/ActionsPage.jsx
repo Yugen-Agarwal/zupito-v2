@@ -1,3 +1,4 @@
+import IconVerify from "../../assets/IconVerify";
 import useScrollReveal from "../../hooks/useScrollReveal";
 
 const ActionsPage = () => {
@@ -72,7 +73,7 @@ const ActionsPage = () => {
           <div className="relative z-10 mt-16 lg:mt-24 mb-16">
             <div className="bg-white rounded-xl shadow-xl overflow-hidden">
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-0 p-4 sm:p-6 md:p-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-0 p-4 sm:p-6 md:p-8">
 
                 {/* ================= LEFT ================= */}
                 <div className="flex flex-col justify-between gap-8 lg:py-4">
@@ -153,8 +154,18 @@ const ActionsPage = () => {
                         placeholder="Email Address..."
                         className="flex-1 px-4 py-4 text-sm outline-none"
                       />
-                      <button className="bg-[#EB3609] hover:bg-[#FF6B35] text-white font-semibold px-6 py-2.5 rounded-full mr-1 transition-colors">
-                        Verify Now
+                      <button
+                        className="bg-[#EB3609] hover:bg-[#FF6B35] text-white font-semibold 
+             px-4 py-2.5 rounded-full mr-1 transition-colors
+             flex items-center justify-center gap-2"
+                      >
+                        {/* Text only on ≥900px */}
+                        <span className="hidden [@media(min-width:900px)]:block">
+                          Verify Now
+                        </span>
+
+                        {/* Icon only on <900px */}
+                        <IconVerify className="block [@media(min-width:900px)]:hidden w-5 h-5" />
                       </button>
                     </div>
 

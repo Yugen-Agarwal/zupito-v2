@@ -44,7 +44,7 @@ const EmailsVerified = () => {
                 <img
                   src="/images/shape-automate.svg"
                   alt="Email verification workflow"
-                  className="w-full h-full md:max-h-[24.1711rem] rounded-[0.85rem] object-contain"
+                  className="w-full h-full max-h-[24.1711rem] rounded-[0.85rem] object-contain"
                 />
               </div>
             </div>

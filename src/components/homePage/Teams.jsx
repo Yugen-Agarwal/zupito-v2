@@ -57,7 +57,7 @@ const Teams = () => {
               <p
                 data-animate-item
                 style={{ transitionDelay: "0.15s" }}
-                className="max-w-[510px] font-['Manrope'] font-medium text-[14px] lg:text-[18px] text-[#475768]"
+                className="max-w-[550px] font-['Manrope'] font-medium text-[14px] lg:text-[18px] text-[#475768]"
               >
                 Experience the quality and speed of Artificial Intelligence in email verification and email finding. Try Zupitu without Sign-Up. We welcome FREE trials and offer 10 Credits daily forever.
               </p>
