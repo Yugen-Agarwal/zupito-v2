@@ -24,7 +24,7 @@ const ContactUs = () => {
   return (
     <section className="relative w-full bg-white overflow-hidden">
       {/* Main Container */}
-      <div className="w-full max-w-full lg:max-w-[1362px] mx-auto  px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[100px] 2xl:px-[150px] py-[80px] sm:py-[100px]">
+      <div className="w-full max-w-full lg:max-w-[1362px] mx-auto  px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[54px] 2xl:px-[60px] py-[40px] sm:py-[70px]">
         {/* Header Section - First Image */}
         <div className="w-full flex flex-col items-center gap-[10px] mb-8 sm:mb-10 md:mb-14 max-w-[708px] mx-auto">
           {/* Contact Us Title with Icon */}
@@ -42,22 +42,21 @@ const ContactUs = () => {
           </h1>
 
           {/* Description Text */}
-          <p className="max-w-full text-center font-['Manrope'] text-[clamp(18px,2.5vw,20px)] font-medium leading-[40px] tracking-normal text-[#62768B]">
+          <p className="max-w-full text-center font-['Manrope'] text-[clamp(18px,2.5vw,20px)] font-medium  tracking-normal text-[#62768B]">
             Get in touch and let us know how we can help. Fill out the form and we'll be in touch as soon as possible.
           </p>
         </div>
 
         {/* Form Container - Second Image */}
-        <div className="w-full max-w-full lg:max-w-[1140px] mx-auto">
+        <div className="w-full max-w-full lg:max-w-[1140px]  mx-auto">
           <div
             className="w-full  p-6 sm:p-8 md:p-10 lg:p-[50px]"
             style={{
               background: 'linear-gradient(180deg, #F4FFF8 0%, #F8F7FF 100%)',
-              minHeight: '489px'
             }}
           >
             {/* Form Content Container - Third Image */}
-            <form onSubmit={handleSubmit} className="w-full max-w-[1021px] mx-auto flex flex-col gap-[40px]">
+            <form onSubmit={handleSubmit} className="w-full max-w-[1021px] mx-auto flex flex-col gap-[20px]">
               {/* Input Fields Row - Fourth Image */}
               <div className="w-full flex flex-col sm:flex-row gap-[24px]">
                 {/* Full Name Input - Sixth Image */}
@@ -68,7 +67,7 @@ const ContactUs = () => {
                     value={formData.fullName}
                     onChange={handleChange}
                     placeholder="Full Name"
-                    className="w-full h-[74px] rounded-[80px] px-[34px] py-[24px] bg-white shadow-[0px_4px_16px_0px_rgba(0,0,0,0.08)] border-none outline-none font-['Manrope'] text-[clamp(16px,2vw,18px)] font-medium text-[#132436] placeholder:text-[#9CA3AF] focus:shadow-[0px_4px_20px_0px_rgba(0,0,0,0.12)] transition-shadow duration-300"
+                    className="w-full h-[55px] rounded-[80px] px-[34px] py-[24px] bg-white shadow-[0px_4px_16px_0px_rgba(0,0,0,0.08)] border-none outline-none font-['Manrope'] text-[clamp(16px,2vw,18px)] font-medium text-[#132436] placeholder:text-[#9CA3AF] focus:shadow-[0px_4px_20px_0px_rgba(0,0,0,0.12)] transition-shadow duration-300"
                     required
                   />
                 </div>
@@ -81,7 +80,7 @@ const ContactUs = () => {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="Email Address"
-                    className="w-full h-[74px] rounded-[80px] px-[34px] py-[24px] bg-white shadow-[0px_4px_16px_0px_rgba(0,0,0,0.08)] border-none outline-none font-['Manrope'] text-[clamp(16px,2vw,18px)] font-medium text-[#132436] placeholder:text-[#9CA3AF] focus:shadow-[0px_4px_20px_0px_rgba(0,0,0,0.12)] transition-shadow duration-300"
+                    className="w-full h-[55px] rounded-[80px] px-[34px] py-[24px] bg-white shadow-[0px_4px_16px_0px_rgba(0,0,0,0.08)] border-none outline-none font-['Manrope'] text-[clamp(16px,2vw,18px)] font-medium text-[#132436] placeholder:text-[#9CA3AF] focus:shadow-[0px_4px_20px_0px_rgba(0,0,0,0.12)] transition-shadow duration-300"
                     required
                   />
                 </div>
@@ -95,7 +94,7 @@ const ContactUs = () => {
                   onChange={handleChange}
                   placeholder="Description"
                   rows="6"
-                  className="w-full min-h-[161px] rounded-[16px] px-[34px] pt-[24px] pb-[24px] bg-white shadow-[0px_4px_16px_0px_rgba(0,0,0,0.08)] border-none outline-none resize-none font-['Manrope'] text-[clamp(16px,2vw,18px)] font-medium text-[#132436] placeholder:text-[#9CA3AF] focus:shadow-[0px_4px_20px_0px_rgba(0,0,0,0.12)] transition-shadow duration-300"
+                  className="w-full max-h-[140px] rounded-[16px] px-[34px] pt-[24px] pb-[24px] bg-white shadow-[0px_4px_16px_0px_rgba(0,0,0,0.08)] border-none outline-none resize-none font-['Manrope'] text-[clamp(16px,2vw,18px)] font-medium text-[#132436] placeholder:text-[#9CA3AF] focus:shadow-[0px_4px_20px_0px_rgba(0,0,0,0.12)] transition-shadow duration-300"
                   required
                 />
               </div>
@@ -104,7 +103,7 @@ const ContactUs = () => {
               <div className="w-full flex justify-end">
                 <button
                   type="submit"
-                  className="w-full sm:w-[170px] h-[70px] rounded-[50px] px-[18px] py-[12px] bg-[#EB3609] hover:bg-[#D32F08] active:bg-[#C22907] transition-colors flex items-center justify-center gap-[13px]"
+                  className="w-full sm:w-[170px] h-[60px] rounded-[50px] px-[18px] py-[12px] bg-[#EB3609] hover:bg-[#D32F08] active:bg-[#C22907] transition-colors flex items-center justify-center gap-[13px]"
                 >
                   <span className="font-['Inter'] text-[16px] font-semibold leading-[100%] tracking-normal text-center text-white">
                     Submit Request

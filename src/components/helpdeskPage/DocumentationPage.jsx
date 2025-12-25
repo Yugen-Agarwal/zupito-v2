@@ -1,106 +1,77 @@
 const DocumentationPage = () => {
   return (
     <section className="relative w-full overflow-hidden">
-      {/* Main Card Wrapper */}
-      <div className="w-full max-w-full">
+      <div className="w-full">
         <div
           className="
             relative
             w-full
-            rounded-[24px]
-            px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-[150px]
-            py-[60px] sm:py-[80px] md:py-[100px]
+            rounded-[32px]
+            px-6 sm:px-8 md:px-12 lg:px-16 xl:px-[120px]
+            py-[64px] sm:py-[72px] md:py-[88px]
             overflow-hidden
           "
           style={{
-            background: "linear-gradient(180deg, #F4F7FA 0%, #E5F2FF 100%)",
+            background: "linear-gradient(180deg, #F4F7FA 0%, #EAF4FF 100%)",
           }}
         >
-          {/* LEFT PIN */}
+          {/* TOP LEFT CORNER DECOR */}
           <img
             src="/images/pin.png"
             alt=""
-            className="
-              pointer-events-none
-              absolute
-              left-0
-              top-0
-              hidden md:block
-              z-10
-            "
-            style={{
-              width: "clamp(100px, 9vw, 180px)",
-              transform: "translate(-30%, -20%)",
-            }}
+            className="absolute  top-0 left-0 pointer-events-none z-0 opacity-70 hidden sm:block w-[90px] md:w-[115px] lg:w-[135px] -translate-x-[15%] -translate-y-[15%]"
           />
 
-          {/* RIGHT PIN */}
           <img
             src="/images/Pin-right.png"
             alt=""
-            className="
-              pointer-events-none
-              absolute
-              right-0
-              top-0
-              hidden md:block
-              z-10
-            "
-            style={{
-              width: "clamp(100px, 9vw, 180px)",
-              transform: "translate(30%, -20%)",
-            }}
+            className="absolute top-0 right-0 pointer-events-none z-0 opacity-70 hidden sm:block w-[100px] md:w-[130px] lg:w-[160px] translate-x-[15%] -translate-y-[15%]"
           />
 
-          {/* Inner Content Container */}
+          {/* CONTENT */}
           <div
             className="
               relative
-              z-20
-              w-full
+              z-10
               mx-auto
               flex
               flex-col
-              lg:flex-row
+              sm:flex-row
               items-center
               justify-between
-              gap-8
+              gap-10
             "
-            style={{
-              maxWidth: "clamp(960px, 72vw, 1160px)", // homepage-scale width
-            }}
+            style={{ maxWidth: "1022px" }}
           >
-            {/* LEFT CONTENT */}
-            <div className="w-full lg:max-w-[640px] flex flex-col gap-6">
+            {/* LEFT */}
+            <div className="w-full sm:max-w-[620px] flex flex-col gap-5">
               <h2
                 className="
                   font-['Inter']
                   font-semibold
                   text-[#132436]
-                  leading-[110%]
-                  tracking-[-0.05em]
+                  tracking-[-0.04em]
+                  leading-[1.15]
+                  text-[28px]
+                  sm:text-[32px]
+                  md:text-[36px]
+                  xl:text-[40px]
                 "
-                style={{
-                  fontSize: "clamp(32px, 3.2vw, 44px)",
-                }}
               >
-                <span className="flex flex-wrap items-center gap-3">
+                <span className="flex items-center gap-3 flex-wrap">
                   <span>Can't</span>
 
-                  <span className="inline-flex items-center justify-center shrink-0">
+                  <span className="inline-flex items-center justify-center">
                     <img
                       src="/images/Commitment-1.svg"
                       alt=""
-                      style={{
-                        width: "clamp(40px, 4vw, 60px)",
-                        height: "clamp(40px, 4vw, 60px)",
-                      }}
+                      className="w-[40px] h-[40px] sm:w-[48px] sm:h-[48px]"
                     />
                   </span>
 
                   <span>find what you're</span>
                 </span>
-                <span className="block">looking for?</span>
+                <span className="block mt-2">looking for?</span>
               </h2>
 
               <p
@@ -108,48 +79,43 @@ const DocumentationPage = () => {
                   font-['Manrope']
                   font-medium
                   text-[#546779]
+                  text-[16px]
+                  sm:text-[17px]
+                  md:text-[18px]
                 "
-                style={{
-                  fontSize: "clamp(16px, 1.4vw, 20px)",
-                }}
               >
                 Check out our full documentation.
               </p>
             </div>
 
             {/* RIGHT BUTTON */}
-            <div className="w-full lg:w-auto shrink-0">
+            <div className="w-full sm:w-auto shrink-0">
               <button
                 className="
                   w-full
                   sm:w-auto
-                  min-w-[220px]
-                  lg:min-w-[240px]
-                  flex
+                  min-w-[220px] flex
                   items-center
                   justify-center
                   gap-3
-                  rounded-[50px]
+                  rounded-full
                   bg-[#EB3609]
                   hover:bg-[#D32F08]
                   transition-colors
                   duration-200
-                  px-6
+                  px-8
+                  h-[56px]
                 "
-                style={{
-                  height: "clamp(56px, 4.5vw, 62px)",
-                }}
               >
                 <span
                   className="
                     font-['Inter']
                     font-semibold
                     text-white
+                    text-[15px]
+                    sm:text-[16px]
                     whitespace-nowrap
                   "
-                  style={{
-                    fontSize: "clamp(14px, 1.1vw, 16px)",
-                  }}
                 >
                   Visit Documentation
                 </span>
@@ -157,11 +123,7 @@ const DocumentationPage = () => {
                 <img
                   src="/images/right-arrow.svg"
                   alt=""
-                  className="object-contain"
-                  style={{
-                    width: "clamp(18px, 1.4vw, 20px)",
-                    height: "clamp(18px, 1.4vw, 20px)",
-                  }}
+                  className="w-[18px] h-[18px]"
                 />
               </button>
             </div>

@@ -11,10 +11,8 @@ const HeroSection = () => {
       <div
         className="
           relative mx-auto
-          max-w-[1440px]
-          2xl:max-w-[1600px]
           px-4 sm:px-6 lg:px-12
-          py-[30px] lg:py-[70px]
+          py-[40px] sm:py-[50px] lg:py-[70px]
         "
       >
         {/* HEADER */}
@@ -24,21 +22,22 @@ const HeroSection = () => {
             {/* TITLE */}
             <h1
               className="
-                flex flex-wrap items-center justify-center gap-3
+                flex flex-wrap items-center justify-center gap-2 sm:gap-3
                 font-['Inter'] font-semibold
-                text-[32px] sm:text-[36px]
+                text-[28px] sm:text-[34px]
                 lg:text-[40px]
                 xl:text-[44px]
                 2xl:text-[46px]
-                leading-[100%]
-                tracking-[-2.2px]
+                leading-[110%]
+                tracking-[-2px]
                 text-[#132436]
-                mx-auto max-w-[66%]
+                mx-auto
+                max-w-full sm:max-w-[80%] lg:max-w-[66%]
               "
             >
               <span>Answers</span>
 
-              <span className="inline-flex w-[48px] h-[48px] xl:w-[60px] xl:h-[60px] 2xl:w-[64px] 2xl:h-[64px]">
+              <span className="inline-flex w-[36px] h-[36px] sm:w-[44px] sm:h-[44px] xl:w-[60px] xl:h-[60px]">
                 <img src="/images/setting-orange-5.svg" alt="" />
               </span>
 
@@ -46,7 +45,7 @@ const HeroSection = () => {
               <br />
               <span>Things</span>
 
-              <span className="inline-flex w-[48px] h-[48px] xl:w-[60px] xl:h-[60px] 2xl:w-[64px] 2xl:h-[64px]">
+              <span className="inline-flex w-[36px] h-[36px] sm:w-[44px] sm:h-[44px] xl:w-[60px] xl:h-[60px]">
                 <img src="/images/rocket-purple.svg" alt="" />
               </span>
 
@@ -54,33 +53,15 @@ const HeroSection = () => {
             </h1>
 
             {/* DESCRIPTION */}
-            <div className="mt-[21px] space-y-2">
-              <p
-                className="
-                  font-['Manrope'] font-medium
-                  text-[16px] sm:text-[18px]
-                  xl:text-[20px]
-                  2xl:text-[22px]
-                  leading-[32px] xl:leading-[44px]
-                  text-[#546779]
-                "
-              >
+            <div className="mt-[20px]  px-1">
+              <p className="font-['Manrope'] font-medium text-[15px] sm:text-[17px] xl:text-[20px] leading-[28px] xl:leading-[44px] text-[#546779]">
                 We've put together quick answers to the most common questions about our{' '}
                 <span className="font-bold text-[#132436]">
                   Email Finder, credits, and support.
                 </span>
               </p>
 
-              <p
-                className="
-                  font-['Manrope'] font-medium
-                  text-[16px] sm:text-[18px]
-                  xl:text-[20px]
-                  2xl:text-[22px]
-                  leading-[32px] xl:leading-[44px]
-                  text-[#546779]
-                "
-              >
+              <p className="font-['Manrope'] font-medium text-[15px] sm:text-[17px] xl:text-[20px] leading-[28px] xl:leading-[44px] text-[#546779]">
                 If you don't see what you're looking for, our team is just a message away.
               </p>
             </div>
@@ -88,62 +69,35 @@ const HeroSection = () => {
         </div>
 
         {/* CARDS + CONNECTOR */}
-        <div
-          className="
-            relative mt-[80px]
-            mx-auto
-            max-w-[1362px]
-            2xl:max-w-[1500px]
-            3xl:max-w-[1650px]
-          "
-        >
+        <div className="relative mt-[60px] sm:mt-[80px] mx-auto max-w-[1362px]">
+
           {/* CONNECTOR */}
-          <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-[28%] z-0 pointer-events-none">
+          <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-[18%] lg:-translate-y-[28%] z-0 pointer-events-none">
             <img
               src="/images/Group-bg.png"
               alt="Connector"
-              className="
-                w-full
-                max-w-[1022px]
-                2xl:max-w-[1120px]
-                3xl:max-w-[1200px]
-                h-auto
-              "
+              className="w-full max-w-[900px] lg:max-w-[1022px] h-auto"
             />
           </div>
 
           {/* CARDS */}
-          <div
-            className="
-              relative z-10 mx-auto
-              flex flex-col md:flex-row
-              gap-[21px]
-              max-w-[1022px]
-              2xl:max-w-[1120px]
-              3xl:max-w-[1200px]
-            "
-          >
+          <div className="relative z-10 mx-auto flex flex-col md:flex-row gap-[21px] max-w-[1022px]">
+
             {/* TECH SUPPORT */}
             <div
-              className="
-                w-full lg:w-[659px] 2xl:lg:w-[720px]
-                rounded-[24px] p-[24px]
-                flex items-center justify-center
-              "
-              style={{
-                background: 'linear-gradient(180deg, #C2CEFF 0%, #96AAFB 100%)',
-              }}
+              className="w-full rounded-[24px] p-[18px] sm:p-[18px] flex items-center justify-center"
+              style={{ background: 'linear-gradient(180deg, #C2CEFF 0%, #96AAFB 100%)' }}
             >
-              <div className="bg-white rounded-[12px] w-full max-w-[611px] px-20 py-[30px] text-center space-y-[24px]">
-                <h2 className="font-['Inter'] font-semibold text-[22px] xl:text-[26px] 2xl:text-[28px] tracking-[-1.2px] text-[#132436]">
+              <div className="bg-white rounded-[12px] w-full max-w-[611px] px-6 sm:px-10 lg:px-20 py-7 text-center space-y-5">
+                <h2 className="font-['Inter'] font-semibold text-[20px] sm:text-[22px] xl:text-[26px] text-[#132436] font-medium">
                   Technical Support
                 </h2>
 
-                <p className="font-['Manrope'] text-[16px] xl:text-[20px] leading-[36px] text-[#585D71]">
+                <p className="font-['Manrope'] text-[15px] sm:text-[16px] xl:text-[18px] text-[#585D71] font-medium">
                   For Product integration or technical support, please write at
                 </p>
 
-                <div className="relative h-[70px] rounded-[74px] flex items-center justify-center overflow-hidden">
+                <div className="relative h-[52px] rounded-[74px] flex items-center justify-center overflow-hidden">
                   <div
                     className="absolute inset-0"
                     style={{
@@ -153,7 +107,7 @@ const HeroSection = () => {
                   />
                   <a
                     href="mailto:support@zupitu.com"
-                    className="relative z-10 font-['Manrope'] text-[18px] xl:text-[20px] font-bold text-black"
+                    className="relative z-10 font-['Manrope'] text-[16px] sm:text-[18px] xl:text-[20px] font-bold text-black"
                   >
                     support@zupitu.com
                   </a>
@@ -163,28 +117,22 @@ const HeroSection = () => {
 
             {/* SALES */}
             <div
-              className="
-                w-full lg:w-[671px] 2xl:lg:w-[740px]
-                rounded-[24px] p-[24px]
-                flex flex-col items-center justify-center
-              "
-              style={{
-                background: 'linear-gradient(180deg, #EEE9FF 0%, #CABCFF 100%)',
-              }}
+              className="w-full rounded-[24px] p-[18px] sm:p-[18px] flex flex-col items-center mb-0!"
+              style={{ background: 'linear-gradient(180deg, #EEE9FF 0%, #CABCFF 100%)' }}
             >
-              <h2 className="font-['Inter'] font-semibold text-[22px] xl:text-[26px] 2xl:text-[28px] tracking-[-1.2px] text-[#132436] mb-4">
-                  Contact Sales
-                </h2>
-              <div className="bg-white rounded-[16px] w-full max-w-[623px] p-[32px] text-center space-y-4 px-20">
-                <p className="font-['Manrope'] text-[16px] xl:text-[20px] leading-[36px] text-[#585D71]">
+              <h2 className="font-['Inter'] font-semibold text-[20px] sm:text-[18px] xl:text-[26px] text-[#132436] mb-[18px]">
+                Contact Sales
+              </h2>
+              <div className="bg-white rounded-[16px] w-full max-w-[623px] px-6 sm:px-10 lg:px-20 py-7 text-center">
+                <p className="font-['Manrope'] text-[15px] sm:text-[16px] xl:text-[18px]  text-[#585D71] font-medium">
                   Looking for a custom quote?
                 </p>
 
-                <p className="font-['Manrope'] text-[16px] xl:text-[20px] leading-[36px] text-[#585D71]">
-                  Drop us a line at client-
+                <p className="font-['Manrope'] text-[15px] sm:text-[16px] xl:text-[18px]  text-[#585D71] mb-5.5  font-medium">
+                  Drop us a line at client -
                 </p>
 
-                <div className="relative h-[70px] rounded-[64px] flex items-center justify-center overflow-hidden">
+                <div className="relative h-[52px] rounded-[64px] flex items-center justify-center overflow-hidden">
                   <div
                     className="absolute inset-0"
                     style={{
@@ -194,13 +142,14 @@ const HeroSection = () => {
                   />
                   <a
                     href="mailto:success@zupitu.com"
-                    className="relative z-10 font-['Manrope'] text-[18px] xl:text-[20px] font-bold text-[#132436]"
+                    className="relative z-10 font-['Manrope'] text-[16px] sm:text-[18px] xl:text-[20px] font-bold text-[#132436]"
                   >
                     success@zupitu.com
                   </a>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
