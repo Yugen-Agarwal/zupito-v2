@@ -10,20 +10,20 @@ const EmailsVerified = () => {
       data-animate="fade-up"
       className="relative w-full bg-white overflow-hidden"
     >
-      <div className="home-container py-2 lg:py-3 pt-0!">
+      <div className="home-container py-8 sm:py-10 md:py-12 lg:py-16 xl:py-20">
         <div className="w-full mx-auto relative">
-          <div className="w-full mx-auto flex flex-col md:flex-row gap-2 md:gap-3">
+          <div className="w-full mx-auto flex flex-col md:flex-row gap-4 sm:gap-5 md:gap-6">
 
             {/* Left column */}
             <div
-              className="w-full lg:w-[50rem] h-auto lg:h-[33.0959rem] rounded-[1.275rem] p-6 bg-[#F0EBFF] flex flex-col gap-5 mb-4 lg:mb-0"
+              className="w-full lg:w-[50rem] h-auto lg:h-[33.0959rem] rounded-[1.275rem] p-4 sm:p-5 md:p-6 bg-[#F0EBFF] flex flex-col gap-4 sm:gap-5 mb-4 lg:mb-0"
               data-animate-item
             >
               <div className="w-full flex flex-col items-center justify-center text-center">
                 <h2
                   data-animate-item
                   style={{ transitionDelay: "0.08s" }}
-                  className="home-subtitle-emailverified sm:text-[1.6999rem]! sm:leading-[1.6999rem]! md:leading-[1.9124rem]! lg:leading-[2.1249rem]! font-['Inter'] text-center"
+                  className="home-subtitle-emailverified sm:text-[1.6999rem] sm:leading-[1.4] md:leading-[1.5] lg:leading-[1.6] font-['Inter'] text-center"
                 >
                   <span className="text-[#132436]">
                     Lead Generation <span className="text-[#9C93B4]">with</span>
@@ -70,11 +70,11 @@ const EmailsVerified = () => {
 
               {/* Bottom content — auto height */}
               <div
-                className="w-full rounded-b-[1.275rem] bg-[#F9F9F8] px-6 py-4 flex flex-col flex-shrink-0"
+                className="w-full rounded-b-[1.275rem] bg-[#F9F9F8] px-4 sm:px-5 md:px-6 py-4 sm:py-5 flex flex-col flex-shrink-0"
                 data-animate-item
                 style={{ transitionDelay: "0.3s" }}
               >
-                <p className="home-description-emailverified text-[#546779] font-['Manrope'] leading-7! mb-4">
+                <p className="home-description-emailverified text-[#546779] font-['Manrope'] leading-[1.6] mb-3 sm:mb-4">
                   Zupitu ensures your emails always reach the right inbox.
                   High email deliverability is achieved through reduced bounce
                   rates, a healthy email list.

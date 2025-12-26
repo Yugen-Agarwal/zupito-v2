@@ -11,19 +11,19 @@ const EmailPrecision = () => {
       className="relative w-full bg-white overflow-hidden"
     >
 
-      <div className="home-container py-8 lg:py-12">
+      <div className="home-container py-8 sm:py-10 md:py-12 lg:py-16 xl:py-20">
         <div className="mx-auto relative">
 
-          <div className="w-full flex flex-col lg:flex-row lg:justify-between lg:items-center gap-[0.3188rem] md:gap-[0.425rem] lg:gap-[0.5313rem]">
+          <div className="w-full flex flex-col lg:flex-row lg:justify-between lg:items-center gap-4 sm:gap-5 md:gap-6 lg:gap-8">
 
             {/* LEFT SIDE - NOW AUTO WIDTH */}
-            <div className="w-full lg:w-auto flex flex-col gap-[0.2125rem] text-center lg:text-left">
+            <div className="w-full lg:w-auto flex flex-col gap-3 sm:gap-4 text-center lg:text-left">
 
               {/* Plugin tag */}
               <div className="flex justify-center lg:justify-start">
                 <div
                   data-animate-item
-                  className="inline-flex items-center justify-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#F6F6F6] w-[10.9965rem] h-[2.6031rem] px-[0.1063rem] py-[0.1063rem] text-[0.9563rem] leading-[0.9563rem] font-semibold text-[#132436] capitalize"
+                  className="inline-flex items-center justify-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#F6F6F6] w-[10.9965rem] h-[2.6031rem] px-[0.1063rem] py-[0.1063rem] text-[0.9563rem] leading-[1] font-semibold text-[#132436] capitalize"
                 >
                   <span className="w-[0.425rem] h-[0.425rem] rounded-full bg-[#3B82F6]" />
                   Plugin Integration
@@ -31,7 +31,7 @@ const EmailPrecision = () => {
               </div>
 
               {/* HEADLINE */}
-              <div className="flex flex-col gap-2 min-w-0">
+              <div className="flex flex-col gap-2 sm:gap-3 min-w-0">
 
                 {/* Line 1 */}
                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-[0.1593rem] min-w-0">
@@ -92,7 +92,7 @@ const EmailPrecision = () => {
               <p
                 data-animate-item
                 style={{ transitionDelay: "0.25s" }}
-                className="home-description pt-4 text-[18px] text-[#546779] font-['Manrope'] mx-auto lg:mx-0 max-w-[550px]"
+                className="home-description pt-4 sm:pt-5 md:pt-6 text-[18px] text-[#546779] font-['Manrope'] mx-auto lg:mx-0 max-w-[550px] leading-[1.6]"
               >
                 Your email marketing success depends upon valid and opt-in email
                 database.<br />

@@ -57,13 +57,13 @@ const FAQsPage = () => {
             </div>
 
             {/* ✅ Reduced gap & margin on mobile */}
-            <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between gap-4 sm:gap-5 lg:gap-[1.1156rem] mt-3 lg:mt-2">
+            <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between gap-4 sm:gap-5 md:gap-6 lg:gap-8 mt-3 sm:mt-4 md:mt-5 lg:mt-6">
 
               <div className="flex-1 max-w-[30.1741rem]">
                 <h2
                   data-animate-item
                   style={{ transitionDelay: "0.08s" }}
-                  className="home-title text-[#132436] font-['Inter'] font-bold text-center lg:text-left"
+                  className="home-title text-[#132436] font-['Inter'] font-bold text-center lg:text-left leading-[1.15]"
                 >
                   <span className="inline-flex items-center">
                     <img
@@ -90,7 +90,7 @@ const FAQsPage = () => {
                 <p
                   data-animate-item
                   style={{ transitionDelay: "0.15s" }}
-                  className="home-description mb-3 sm:mb-4 lg:mb-[2.1249rem] text-center lg:text-left text-[#546779]"
+                  className="home-description mb-3 sm:mb-4 md:mb-5 lg:mb-6 text-center lg:text-left text-[#546779] leading-[1.6]"
                 >
                   If you're new or looking for answers to your questions, this guide will help you learn more about our services and their features.
                 </p>
@@ -98,7 +98,7 @@ const FAQsPage = () => {
             </div>
 
             {/* ================= FAQ ITEMS ================= */}
-            <div className="w-full mt-4 sm:mt-6 lg:mt-16">
+            <div className="w-full mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-16">
               {faqs.map((faq, index) => (
                 <div
                   key={index}
@@ -113,11 +113,11 @@ const FAQsPage = () => {
                   <div
                     data-animate-item
                     style={{ transitionDelay: `${0.1 * (index + 1)}s` }}
-                    className="w-full py-4 sm:py-5 lg:py-[1.0625rem] flex items-center justify-between cursor-pointer hover:bg-gray-50/50"
+                    className="w-full py-4 sm:py-5 md:py-6 flex items-center justify-between cursor-pointer hover:bg-gray-50/50"
                     onClick={() => toggleFAQ(index)}
                   >
-                    <div className="flex-1 pr-4">
-                      <h3 className="text-[0.95rem] sm:text-[1.05rem] md:text-[1.1rem] font-bold text-[#132436] font-['Manrope']">
+                    <div className="flex-1 pr-4 sm:pr-5 md:pr-6">
+                      <h3 className="text-[0.95rem] sm:text-[1.05rem] md:text-[1.1rem] font-bold text-[#132436] font-['Manrope'] leading-[1.4]">
                         {index + 1}. {faq.question}
                       </h3>
                     </div>
@@ -144,12 +144,12 @@ const FAQsPage = () => {
                   <div
                     className={`overflow-hidden transition-all duration-300 ease-in-out ${
                       openIndex === index
-                        ? 'max-h-[26.5617rem] opacity-100 py-3 sm:py-4'
+                        ? 'max-h-[26.5617rem] opacity-100 py-3 sm:py-4 md:py-5'
                         : 'max-h-0 opacity-0 py-0'
                     }`}
                   >
-                    <div className="px-4 sm:px-6 lg:px-[2.1249rem]">
-                      <p className="text-[0.9375rem] sm:text-[1rem] text-[#747C9A] font-['Manrope'] leading-relaxed">
+                    <div className="px-4 sm:px-5 md:px-6 lg:px-8">
+                      <p className="text-[0.9375rem] sm:text-[1rem] text-[#747C9A] font-['Manrope'] leading-[1.6]">
                         {faq.answer}
                       </p>
                     </div>

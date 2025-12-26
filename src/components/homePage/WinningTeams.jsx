@@ -16,15 +16,15 @@ const WinningTeams = () => {
       data-animate="fade-up"
       className="relative w-full bg-transparent"
     >
-      <div className="mx-auto max-w-[1800px] px-4 py-6 flex justify-center">
+      <div className="mx-auto max-w-[1800px] px-4 sm:px-6 md:px-8 py-8 sm:py-10 md:py-12 lg:py-16 flex justify-center">
         <div
           className="w-full max-w-full mx-auto rounded-2xl bg-no-repeat
-           bg-cover bg-center px-4 sm:px-6 md:px-8 lg:px-10 xl:px-4 2xl:px-2 py-12 sm:py-14 md:py-16
+           bg-cover bg-center px-4 sm:px-6 md:px-8 lg:px-10 xl:px-4 2xl:px-2 py-10 sm:py-12 md:py-14 lg:py-16 xl:py-20
             bg-[url('/images/footer-plain-bg.png')] xl:bg-[url('/images/winning-teams-bg.png')]
           "
         >
           {/* Header */}
-          <div className="text-center flex flex-col items-center gap-3">
+          <div className="text-center flex flex-col items-center gap-3 sm:gap-4 md:gap-5">
             <div
               data-animate-item
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10"
@@ -42,7 +42,7 @@ const WinningTeams = () => {
                 font-bold 
                 font-['Inter'] 
                 text-2xl sm:text-3xl md:text-4xl lg:text-5xl
-                leading-tight
+                leading-[1.2] sm:leading-[1.15]
                 max-w-4xl
               "
             >
@@ -66,6 +66,7 @@ const WinningTeams = () => {
                 text-white/70 
                 font-['Manrope'] 
                 text-sm sm:text-base md:text-lg
+                leading-[1.6]
               "
             >
               Zupitu simplifies prospecting with intuitive tools for high-quality
@@ -75,7 +76,7 @@ const WinningTeams = () => {
 
           {/* Cards */}
           <div
-            className="mt-4 xl:mt-40 grid grid-cols-2 max-[450px]:grid-cols-1 w-full max-w-[95%] sm:max-w-[92%] md:max-w-[90%] lg:max-w-[88%] xl:max-w-[85%] 2xl:max-w-[82%] xl:grid-cols-4 gap-2 lg:gap-3 mx-auto justify-items-stretch"
+            className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 xl:mt-16 2xl:mt-20 grid grid-cols-2 max-[450px]:grid-cols-1 w-full max-w-[95%] sm:max-w-[92%] md:max-w-[90%] lg:max-w-[88%] xl:max-w-[85%] 2xl:max-w-[82%] xl:grid-cols-4 gap-3 sm:gap-4 md:gap-5 lg:gap-6 mx-auto justify-items-stretch"
           >
 
             {cards.map((card, idx) => (
@@ -89,17 +90,17 @@ const WinningTeams = () => {
                   bg-[#1F2F44]
                   border border-white/10
                   rounded-2xl
-                  px-6 py-8
+                  px-4 sm:px-5 md:px-6 py-6 sm:py-7 md:py-8
                   text-center
-                  flex flex-col items-center justify-center gap-3
+                  flex flex-col items-center justify-center gap-3 sm:gap-4
                   transition-transform hover:-translate-y-1
                 "
               >
-                <div className="text-[#EDFF67] font-bold font-['Inter'] text-3xl sm:text-4xl">
+                <div className="text-[#EDFF67] font-bold font-['Inter'] text-2xl sm:text-3xl md:text-4xl leading-[1.2]">
                   {card.title}
                 </div>
 
-                <p className="text-sm sm:text-base text-white/80 whitespace-pre-line font-['Manrope'] leading-loose">
+                <p className="text-sm sm:text-base text-white/80 whitespace-pre-line font-['Manrope'] leading-[1.6]">
                   {card.desc}
                 </p>
               </div>

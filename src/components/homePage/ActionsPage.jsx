@@ -7,11 +7,11 @@ const ActionsPage = ({isPopupOpen , setIsPopupOpen}) => {
     <section
       ref={sectionRef}
       data-animate="fade-up"
-      className="relative w-full bg-[#FAFBFF] overflow-hidden mt-4"
+      className="relative w-full bg-[#FAFBFF] overflow-hidden"
     >
       {/* ================= CONTAINER ================= */}
-      <div className="home-container py-8 lg:py-12">
-        <div className="mx-auto  relative">
+      <div className="home-container py-8 sm:py-10 md:py-12 lg:py-16 xl:py-20">
+        <div className="mx-auto relative">
 
           {/* ================= HEADER ================= */}
           <div className="text-center">
@@ -26,7 +26,7 @@ const ActionsPage = ({isPopupOpen , setIsPopupOpen}) => {
             <h2
               data-animate-item
               style={{ transitionDelay: "0.08s" }}
-              className="home-title mt-5 font-['Inter'] font-semibold text-[#132436]"
+              className="home-title mt-4 sm:mt-5 md:mt-6 font-['Inter'] font-semibold text-[#132436] leading-[1.15]"
             >
               <span className="inline-flex items-center text-[1.7rem] sm:text-[2.1rem] md:text-[2.65rem] lg:text-[3.18rem]">
                 See
@@ -44,7 +44,7 @@ const ActionsPage = ({isPopupOpen , setIsPopupOpen}) => {
             <p
               data-animate-item
               style={{ transitionDelay: "0.15s" }}
-              className="home-description-actionpage mt-5 max-w-[60rem] mx-auto text-[#546779]"
+              className="home-description-actionpage mt-4 sm:mt-5 md:mt-6 max-w-[60rem] mx-auto text-[#546779] leading-[1.6]"
             >
               Experience the quality and speed of AI-powered email verification
               and email finding. Try Zupitu without sign-up. Enjoy free trials
@@ -53,7 +53,7 @@ const ActionsPage = ({isPopupOpen , setIsPopupOpen}) => {
           </div>
 
           {/* ================= DECORATIONS ================= */}
-          <div className="absolute inset-x-0 flex justify-center mt-4 pointer-events-none">
+          <div className="absolute left-0 right-0 flex justify-center mt-6 sm:mt-8 pointer-events-none">
             <img
               src="/images/element-img.svg"
               alt=""
@@ -65,18 +65,18 @@ const ActionsPage = ({isPopupOpen , setIsPopupOpen}) => {
             src="/images/action-bg-animation.png"
             alt=""
             aria-hidden
-            className="hidden sm:block absolute left-[-6rem] top-1/3 w-[12rem] opacity-80 pointer-events-none"
+            className="hidden sm:block absolute left-[-6rem] top-1/.3 w-[12rem] opacity-80 pointer-events-none"
           />
 
           {/* ================= MAIN CARD ================= */}
-          <div className="relative z-10 mt-16 lg:mt-24 mb-16">
+          <div className="relative z-10 mt-10 sm:mt-12 md:mt-16 lg:mt-20 xl:mt-24 mb-8 sm:mb-12 md:mb-16">
             <div className="bg-white rounded-xl shadow-xl overflow-hidden">
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-0 p-4 sm:p-6 md:p-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-4 sm:p-6 md:p-8 lg:p-10">
 
                 {/* ================= LEFT ================= */}
-                <div className="flex flex-col justify-between gap-8 lg:py-4">
-                  <div className="space-y-5 sm:px-4">
+                <div className="flex flex-col justify-between gap-6 sm:gap-8 lg:py-4">
+                  <div className="space-y-4 sm:space-y-5 sm:px-4">
 
                     <div
                       data-animate-item
@@ -88,7 +88,7 @@ const ActionsPage = ({isPopupOpen , setIsPopupOpen}) => {
 
                     <h3
                       data-animate-item
-                      className="home-subtitle-actionpage font-['Inter'] text-[#132436]"
+                      className="home-subtitle-actionpage font-['Inter'] text-[#132436] leading-[1.35]"
                     >
                       Comprehensive Personal & Business
                       <span className="inline-flex mx-2 align-middle">
@@ -103,7 +103,7 @@ const ActionsPage = ({isPopupOpen , setIsPopupOpen}) => {
 
                     <p
                       data-animate-item
-                      className="actionpage-description text-[#546779] pr-1.5"
+                      className="actionpage-description text-[#546779] pr-1.5 leading-[1.6]"
                     >
                       Verify up to 10 emails instantly without sign-up. Enter an
                       email, click Verify, and repeat. Explore bulk validation,

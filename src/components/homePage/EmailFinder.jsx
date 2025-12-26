@@ -10,18 +10,18 @@ const EmailFinder = () => {
       data-animate="fade-up"
       className="relative w-full bg-white overflow-hidden"
     >
-      <div className="home-container pb-10 lg:pb-16">
+      <div className="home-container py-8 sm:py-10 md:py-12 lg:py-16 xl:py-20">
         <div className="w-full h-auto mx-auto">
 
           <div className="relative w-full bg-white overflow-hidden">
 
             {/* Two column responsive layout */}
-            <div className="md:grid md:grid-cols-1 lg:grid-cols-5 items-stretch gap-2 md:gap-3 ">
+            <div className="md:grid md:grid-cols-1 lg:grid-cols-5 items-stretch gap-4 sm:gap-5 md:gap-6">
               {/* LEFT: second + fourth + fifth images combined */}
-              <div className="col-span-3 mb-4 md:mb-0 flex">
+              <div className="col-span-3 mb-4 sm:mb-5 md:mb-0 flex">
                 <div className="flex flex-col border-[#EEF0F3] border-solid border rounded-[1.275rem] w-full h-full" data-animate-item>
                   {/* Second image area (feature chips panel) */}
-                  <div className="relative w-full bg-[#F5F5F5] rounded-t-[1.275rem] pt-10 sm:pt-10 md:pt-[2.1249rem] px-4 sm:px-6 pb-6">
+                  <div className="relative w-full bg-[#F5F5F5] rounded-t-[1.275rem] pt-6 sm:pt-8 md:pt-10 px-4 sm:px-5 md:px-6 pb-4 sm:pb-5 md:pb-6">
                     {/* Use provided image as-is (no manual chips) */}
                     <div className="w-full flex items-center justify-center">
                       <img
@@ -33,9 +33,9 @@ const EmailFinder = () => {
                   </div>
 
                   {/* Fourth image (bottom description panel) */}
-                  <div className="w-full bg-[#FCFCFD] rounded-b-[1.275rem] py-4 px-7 flex-1 flex flex-col">
-                    <div className="gap-7 flex flex-col justify-between h-full">
-                      <p className="home-description-emailfinder text-[#546779] font-['Manrope']">
+                  <div className="w-full bg-[#FCFCFD] rounded-b-[1.275rem] py-4 sm:py-5 md:py-6 px-4 sm:px-5 md:px-7 flex-1 flex flex-col">
+                    <div className="gap-4 sm:gap-5 md:gap-6 flex flex-col justify-between h-full">
+                      <p className="home-description-emailfinder text-[#546779] font-['Manrope'] leading-[1.6]">
                         Beyond Opt-In mail list, email finder is a one of the
                         most reliable sources of building a deliverable list.
                         Zupitu helps you uncover the most accurate.
@@ -71,16 +71,16 @@ const EmailFinder = () => {
                     className="pointer-events-none select-none absolute inset-0 w-full h-full object-cover rounded-[1.275rem]"
                   />
 
-                  <div className="relative z-[1] w-full h-full flex flex-col items-center gap-5 p-3 sm:p-4">
+                  <div className="relative z-[1] w-full h-full flex flex-col items-center gap-4 sm:gap-5 p-3 sm:p-4">
                     <h3
                       data-animate-item
                       style={{ transitionDelay: "0.2s" }}
-                      className=" text-center font-['Inter'] text-[#132436] capitalize text-[24px]!"
+                      className="text-center font-['Inter'] text-[#132436] capitalize text-[20px] sm:text-[22px] md:text-[24px] leading-[1.3] font-bold"
                     >
                       List Building With Reliable Email Finder
                     </h3>
 
-                    <div className="w-full max-w-[37.1864rem] mx-auto flex flex-col items-center gap-2 2xl:gap-6">
+                    <div className="w-full max-w-[37.1864rem] mx-auto flex flex-col items-center gap-3 sm:gap-4 md:gap-5 2xl:gap-6">
                       {[
                         "Check domain status",
                         "Verified business emails",
@@ -92,7 +92,7 @@ const EmailFinder = () => {
                           key={label}
                           data-animate-item
                           style={{ transitionDelay: `${0.15 + idx * 0.08}s` }}
-                          className="w-full bg-white rounded-[0.5313rem] shadow-[0_0.5rem_1.25rem_0_#00000012] px-3 flex items-center gap-4 py-2"
+                          className="w-full bg-white rounded-[0.5313rem] shadow-[0_0.5rem_1.25rem_0_#00000012] px-3 sm:px-4 flex items-center gap-3 sm:gap-4 py-2.5 sm:py-3"
                         >
                           <span className="inline-flex items-center justify-center min-w-[2.0187rem] min-h-[2.0187rem] rounded-[0.5313rem] bg-[#F6F6F7]">
                             <img
@@ -101,7 +101,7 @@ const EmailFinder = () => {
                               className="w-5 h-4 object-contain"
                             />
                           </span>
-                          <span className="home-description-emailfinder-bottom text-[#3A4A5A] font-['Manrope']">
+                          <span className="home-description-emailfinder-bottom text-[#3A4A5A] font-['Manrope'] leading-[1.5]">
                             {label}
                           </span>
                         </div>

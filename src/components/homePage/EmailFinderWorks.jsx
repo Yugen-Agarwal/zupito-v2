@@ -37,7 +37,7 @@ const EmailFinderWorks = () => {
     >
       {/* Outer container spacing mirrors other homepage sections */}
       <div
-        className="home-container py-8 lg:py-10"
+        className="home-container py-8 sm:py-10 md:py-12 lg:py-16 xl:py-20"
         style={{ overflow: 'visible', minHeight: 'auto' }}
       >
         <div className="w-full mx-auto relative overflow-visible">
@@ -45,7 +45,7 @@ const EmailFinderWorks = () => {
           <div className="text-center">
             <div
               data-animate-item
-              className="inline-flex font-['Manrope'] items-center justify-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#FFE9F2] px-3 py-2 h-[1.8063rem] text-[0.7438rem] leading-[100%] font-bold text-[#132436]"
+              className="inline-flex font-['Manrope'] items-center justify-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#FFE9F2] px-3 py-2 h-[1.8063rem] text-[0.7438rem] leading-[1] font-bold text-[#132436]"
             >
               <span className="w-2.5 h-2.5 rounded-full bg-[#7B8DFF]" />
               <span>Type Something</span>
@@ -54,7 +54,7 @@ const EmailFinderWorks = () => {
             <h2
               data-animate-item
               style={{ transitionDelay: '0.08s' }}
-              className="home-title !mt-3 text-[#132436] font-['Inter'] font-bold text-center"
+              className="home-title mt-3 sm:mt-4 md:mt-5 text-[#132436] font-['Inter'] font-bold text-center leading-[1.15]"
             >
               <span className="inline-block align-middle">
                 How Our
@@ -73,14 +73,14 @@ const EmailFinderWorks = () => {
             <p
               data-animate-item
               style={{ transitionDelay: '0.15s' }}
-              className="home-description !mt-2 !mb-6 lg:px-17 lg:!mb-2 text-[#546779] font-['Manrope'] text-center max-w-full mx-auto text-[19.5px]"
+              className="home-description mt-3 sm:mt-4 md:mt-5 mb-6 sm:mb-8 md:mb-10 lg:mb-12 text-[#546779] font-['Manrope'] text-center max-w-full mx-auto text-[17px] sm:text-[18px] md:text-[19.5px] leading-[1.6]"
             >
               Most companies follow unique email patterns. Our tool detects these formats automatically, helping you uncover accurate contact details, even for large organizations.
             </p>
           </div>
 
           {/* Decorative connector graphic */}
-          <div className="hidden lg:flex absolute justify-center w-full !mt-3 md:!mt-4 lg:!mt-4">
+          <div className="hidden lg:flex absolute justify-center w-full mt-4 md:mt-5 lg:mt-6">
             <img
               src="/images/Group-bg.png"
               alt=""
@@ -91,8 +91,8 @@ const EmailFinderWorks = () => {
           </div>
 
           {/* Three different cards with background image per card */}
-          <div className="relative flex justify-center bottom-0 lg:-bottom-40 !mb-8 md:!mb-12 lg:!mb-[7.4373rem]">
-            <div className="relative mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-3 w-full overflow-visible pb-2">
+          <div className="relative flex justify-center bottom-0 lg:-bottom-40 mb-8 sm:mb-10 md:mb-12 lg:mb-16 xl:mb-20">
+            <div className="relative mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6 w-full overflow-visible pb-2">
               {steps.map((step, idx) => {
                 const baseDelay = 0.1 + idx * 0.08
                 return (
@@ -131,7 +131,7 @@ const EmailFinderWorks = () => {
                       </span>
                     </div>
                     <div
-                      className="w-full rounded-[0.85rem] bg-white p-[1.1688rem] md:p-[1.3813rem] !mb-0 overflow-visible"
+                      className="w-full rounded-[0.85rem] bg-white p-4 sm:p-5 md:p-6 mb-0 overflow-visible"
                       style={{
                         overflow: 'visible',
                         height: 'auto',
@@ -139,8 +139,8 @@ const EmailFinderWorks = () => {
                       }}
                       data-animate-item
                     >
-                      <h4 className="text-[0.9563rem] sm:text-[20.4px] font-bold text-[#132436] font-['Inter'] !mb-2">{step.title}</h4>
-                      <p className="home-description text-[#546779] font-['Manrope'] !mb-0">
+                      <h4 className="text-[16px] sm:text-[18px] md:text-[20.4px] font-bold text-[#132436] font-['Inter'] mb-2 sm:mb-3 leading-[1.3]">{step.title}</h4>
+                      <p className="home-description text-[#546779] font-['Manrope'] mb-0 leading-[1.6]">
                         {step.description}
                       </p>
                     </div>

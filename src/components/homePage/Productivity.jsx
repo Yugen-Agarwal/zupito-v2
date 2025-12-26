@@ -10,12 +10,12 @@ const Productivity = () => {
       className="relative w-full bg-[#FAFBFF] overflow-hidden"
     >
       {/* Container rhythm mirrors ActionsPage */}
-      <div className="home-container py-10 lg:py-16">
+      <div className="home-container py-8 sm:py-10 md:py-12 lg:py-16 xl:py-20">
         <div className="w-full mx-auto">
           {/* Top copy row (second image sizing intent) */}
-          <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1.0fr] items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1.0fr] items-start gap-6 sm:gap-8 md:gap-10">
             {/* Headline block on the left */}
-            <div className="flex flex-col gap-4 text-center lg:text-left">
+            <div className="flex flex-col gap-3 sm:gap-4 text-center lg:text-left">
               <div
                 data-animate-item
                 className="inline-flex font-['Manrope'] items-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#F6F6F6] px-3 py-2 h-[1.8063rem] w-fit mx-auto lg:mx-0 text-[0.7438rem] font-bold text-[#132436] shadow-[0_0.0625rem_0_0_#0000000A]"
@@ -27,7 +27,7 @@ const Productivity = () => {
               <h2
                 data-animate-item
                 style={{ transitionDelay: "0.08s" }}
-                className="home-title text-[#132436] font-['Inter'] font-bold"
+                className="home-title text-[#132436] font-['Inter'] font-bold leading-[1.15]"
               >
                 <span>Powerful</span>
                 <span className="align-middle inline-flex items-center justify-center mx-2 relative -top-px">
@@ -44,11 +44,11 @@ const Productivity = () => {
             </div>
 
             {/* Right description copy */}
-            <div className="text-center mt-4 lg:mt-0 lg:text-left ">
+            <div className="text-center mt-4 sm:mt-5 lg:mt-0 lg:text-left">
               <p
                 data-animate-item
                 style={{ transitionDelay: "0.15s" }}
-                className="home-description text-[#546779] font-['Manrope'] max-w-[550px] text-[20.4px] mx-auto lg:mx-0"
+                className="home-description text-[#546779] font-['Manrope'] max-w-[550px] text-[18px] sm:text-[19px] md:text-[20.4px] mx-auto lg:mx-0 leading-[1.6]"
               >
                 Zupitu's user-friendly interface simplifies prospecting with
                 intuitive tools for high-quality data generation.
@@ -56,7 +56,7 @@ const Productivity = () => {
               <p
                 data-animate-item
                 style={{ transitionDelay: "0.22s" }}
-                className="home-description  text-[#546779] font-['Manrope'] text-[20.4px] mx-auto lg:mx-0 max-w-[550px]"
+                className="home-description text-[#546779] font-['Manrope'] text-[18px] sm:text-[19px] md:text-[20.4px] mx-auto lg:mx-0 max-w-[550px] leading-[1.6] mt-3 sm:mt-4"
               >
                 It supports seamless team collaboration, easily handles large
                 data volumes, and offers cost-effective scalability for growing
@@ -66,7 +66,7 @@ const Productivity = () => {
           </div>
 
           {/* Main content row (third image sizing intent) */}
-          <div className="!mt-10 sm:!mt-12 grid grid-cols-1 lg:grid-cols-2 gap-[1.0625rem] md:gap-[1.5938rem]">
+          <div className="mt-8 sm:mt-10 md:mt-12 lg:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-5 md:gap-6 lg:gap-8">
             {/* Left large card (fourth + sixth + seventh images) */}
             <div className="relative w-full" data-animate-item>
               {/* Background image */}
@@ -98,11 +98,11 @@ const Productivity = () => {
                       <span>Type Something</span>
                     </div>
 
-                    <div className="mt-5 flex flex-col gap-4">
+                    <div className="mt-4 sm:mt-5 flex flex-col gap-3 sm:gap-4">
                       <h3
                         data-animate-item
                         style={{ transitionDelay: "0.12s" }}
-                        className="text-[#132436] font-['Inter'] font-semibold text-center lg:text-start leading-tight text-[1.35rem] sm:text-[1.6rem] md:text-[1.85rem] lg:text-[2.05rem]"
+                        className="text-[#132436] font-['Inter'] font-semibold text-center lg:text-start leading-[1.3] text-[1.35rem] sm:text-[1.6rem] md:text-[1.85rem] lg:text-[2.05rem]"
                       >
                         Powerful Team, Management
                         <br className="hidden sm:block" />
@@ -117,11 +117,11 @@ const Productivity = () => {
                         <span>Success</span>
                       </h3>
 
-                      <div className="flex flex-col gap-2 text-center lg:text-left mb-8 lg:mb-0">
+                      <div className="flex flex-col gap-3 sm:gap-4 text-center lg:text-left mb-6 sm:mb-8 lg:mb-0">
                         <p
                           data-animate-item
                           style={{ transitionDelay: "0.18s" }}
-                          className="home-description text-[#546779] font-['Manrope']"
+                          className="home-description text-[#546779] font-['Manrope'] leading-[1.6]"
                         >
                           Zupitu's Team Management features empower businesses
                           with streamlined team management workflows.
@@ -129,7 +129,7 @@ const Productivity = () => {
                         <p
                           data-animate-item
                           style={{ transitionDelay: "0.24s" }}
-                          className="home-description  text-[#546779] font-['Manrope']"
+                          className="home-description text-[#546779] font-['Manrope'] leading-[1.6]"
                         >
                           Our free platform features help customers to optimize
                           resource allocation and get actionable insights
@@ -139,7 +139,7 @@ const Productivity = () => {
                         <p
                           data-animate-item
                           style={{ transitionDelay: "0.3s" }}
-                          className="home-description  text-[#546779] font-['Manrope']"
+                          className="home-description text-[#546779] font-['Manrope'] leading-[1.6]"
                         >
                           These tools ensure accountability and decision- making
                           for achieving business goals
@@ -153,7 +153,7 @@ const Productivity = () => {
 
             {/* Right column feature list (ninth + tenth + eleventh images) */}
             <div className="w-full">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2 md:gap-3 h-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 sm:gap-5 md:gap-6 h-full">
                 {[
                   {
                     title: "Manage Multiple Teams",
@@ -181,9 +181,9 @@ const Productivity = () => {
                     data-animate-item
                     style={{ transitionDelay: `${0.1 * idx}s` }}
                     data-hover="lift"
-                    className="rounded-[0.85rem] border border-[#EEF0F3] bg-white p-5 sm:p-6 md:p-6 lg:p-6 lg:pt-8 lg:pb-8 shadow-[0_0.0625rem_0_0_#0000000A] cursor-pointer"
+                    className="rounded-[0.85rem] border border-[#EEF0F3] bg-white p-4 sm:p-5 md:p-6 lg:p-6 lg:pt-8 lg:pb-8 shadow-[0_0.0625rem_0_0_#0000000A] cursor-pointer"
                   >
-                    <div className="flex items-start gap-4">
+                    <div className="flex items-start gap-3 sm:gap-4">
                       <div className="w-[2.8687rem] h-[2.8687rem] rounded-[2.3374rem] bg-[#FAFBFF] flex items-center justify-center shrink-0">
                         <img
                           src={item.icon}
@@ -191,11 +191,11 @@ const Productivity = () => {
                           className="w-[1.6999rem] h-[1.6999rem]"
                         />
                       </div>
-                      <div className="flex-1 flex flex-col gap-2">
-                        <h4 className="text-[20.4px] font-bold text-[#132436] font-['Inter'] capitalize">
+                      <div className="flex-1 flex flex-col gap-2 sm:gap-3">
+                        <h4 className="text-[18px] sm:text-[19px] md:text-[20.4px] font-bold text-[#132436] font-['Inter'] capitalize leading-[1.3]">
                           {item.title}
                         </h4>
-                        <p className="home-description  text-[#546779] font-['Manrope'] ">
+                        <p className="home-description text-[#546779] font-['Manrope'] leading-[1.6]">
                           {item.desc}
                         </p>
                       </div>

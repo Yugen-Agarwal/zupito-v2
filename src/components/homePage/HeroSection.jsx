@@ -32,22 +32,22 @@ function HeroSection() {
       {/* Hero Section */}
       <section
         ref={sectionRef}
-        className="relative w-full overflow-hidden "
+        className="relative w-full overflow-hidden"
       >
         {/* Dots/backdrop spacing wrapper to mimic Figma breathing room */}
-        <div className="home-container pb-10">
+        <div className="home-container py-8 sm:py-10 md:py-12 lg:py-16 xl:py-20">
           <div className="mx-auto relative">
             <div
-              className="grid grid-cols-1 md:grid-cols-2 items-center md:items-start
+              className="grid grid-cols-1 md:grid-cols-2 items-center md:items-start gap-6 md:gap-8 lg:gap-10
                 [@media(min-width:64rem)_and_(max-width:79.9375rem)]:min-h-[calc(100vh-7.5rem)]"
             >
               {/* Copy - Left Side 50% */}
-              <div className="w-full flex flex-col items-center sm:items-center md:items-start pt-4 sm:pt-8 md:pt-18 lg:pt-24 xl:pt-32">
+              <div className="w-full flex flex-col items-center sm:items-center md:items-start pt-4 sm:pt-6 md:pt-8 lg:pt-12 xl:pt-16">
                 <div className="w-full">
                   <h1
                     data-animate-item
                     style={{ transitionDelay: "0.05s" }}
-                    className="text-center sm:text-center md:text-left text-[2rem] sm:text-[2.3rem] md:text-[2.5rem] lg:text-[48px] xl:text-[60px] 2xl:text-[68px] leading-[1.08] text-[#132436] font-bold font-['Inter']"
+                    className="text-center sm:text-center md:text-left text-[2rem] sm:text-[2.3rem] md:text-[2.5rem] lg:text-[48px] xl:text-[60px] 2xl:text-[68px] leading-[1.1] sm:leading-[1.08] text-[#132436] font-bold font-['Inter']"
                   >
                     {/* Line 1: AI Tool To Connect */}
                     <span className="block sm:whitespace-nowrap">
@@ -76,7 +76,7 @@ function HeroSection() {
                   <p
                     data-animate-item
                     style={{ transitionDelay: "0.15s" }}
-                    className="home-description text-center sm:text-center md:text-left text-[#546779] text-[14px] sm:text-[16px] md:text-[18px] leading-[1.65] font-['Manrope'] max-w-full md:max-w-[32rem] mt-6 sm:mt-7"
+                    className="home-description text-center sm:text-center md:text-left text-[#546779] text-[14px] sm:text-[16px] md:text-[18px] leading-[1.6] sm:leading-[1.65] font-['Manrope'] max-w-full md:max-w-[32rem] mt-4 sm:mt-5 md:mt-6"
                   >
                     Simplify outreach with Zupitu's AI Email Verifier & Finder – validate emails, find business contacts, and boost deliverability.
                   </p>
@@ -85,7 +85,7 @@ function HeroSection() {
                 <div
                   data-animate-item
                   style={{ transitionDelay: "0.25s" }}
-                  className="flex flex-wrap justify-center sm:justify-center md:justify-start items-center gap-4 sm:gap-5 md:gap-6 mt-9 sm:mt-10"
+                  className="flex flex-wrap justify-center sm:justify-center md:justify-start items-center gap-3 sm:gap-4 md:gap-5 lg:gap-6 mt-6 sm:mt-7 md:mt-8"
                 >
                   <button
                     data-hover="lift"
@@ -116,10 +116,10 @@ function HeroSection() {
                   </button>
                 </div>
 
-                <div className="mt-6 sm:mt-8 md:mt-10 mb-4 w-full max-w-[32.9365rem] h-px bg-linear-to-l from-transparent to-[#666666]/20" />
+                <div className="mt-6 sm:mt-7 md:mt-8 lg:mt-10 mb-4 sm:mb-5 md:mb-6 w-full max-w-[32.9365rem] h-px bg-linear-to-l from-transparent to-[#666666]/20" />
 
                 {/* Trust bullets */}
-                <div className="mt-2 sm:mt-4 md:mt-6 flex flex-wrap justify-center sm:justify-center md:justify-start items-center gap-3">
+                <div className="mt-3 sm:mt-4 md:mt-5 lg:mt-6 flex flex-wrap justify-center sm:justify-center md:justify-start items-center gap-2 sm:gap-3">
                   <div
                     data-animate-item
                     style={{ transitionDelay: "0.35s" }}
@@ -133,7 +133,7 @@ function HeroSection() {
                         className="w-3 h-3 sm:w-3.5 sm:h-3.5"
                       />
                     </span>
-                    <span className="text-[0.85rem] whitespace-nowrap  font-['Manrope'] font-semibold leading-[120%] tracking-[0] text-[#2E3E50]">
+                    <span className="text-[0.85rem] whitespace-nowrap font-['Manrope'] font-semibold leading-[1.2] tracking-[0] text-[#2E3E50]">
                       Flexible solution
                     </span>
                   </div>
@@ -151,7 +151,7 @@ function HeroSection() {
                         className="w-3 h-3 sm:w-3.5 sm:h-3.5"
                       />
                     </span>
-                    <span className="text-[0.85rem]  whitespace-nowrap  font-['Manrope'] font-semibold leading-[120%] tracking-[0] text-[#2E3E50]">
+                    <span className="text-[0.85rem] whitespace-nowrap font-['Manrope'] font-semibold leading-[1.2] tracking-[0] text-[#2E3E50]">
                       No credit card required
                     </span>
                   </div>
@@ -159,19 +159,19 @@ function HeroSection() {
               </div>
 
               {/* Mobile Divider */}
-              <div className="block md:hidden mt-8 w-full h-px bg-gray-200" />
+              <div className="block md:hidden mt-6 sm:mt-8 w-full h-px bg-gray-200" />
               
               {/* Image - Right Side 50% */}
               <div
                 data-animate-item="scale"
                 style={{ transitionDelay: "0.35s" }}
-                className="w-full flex items-start justify-center md:justify-end pt-0"
+                className="w-full flex items-start justify-center md:justify-end -mt-6 sm:-mt-8 md:-mt-12 lg:-mt-16 xl:-mt-20"
               >
                 <div className="w-full flex items-start justify-center">
                   <img
                     src="/images/Frame 1321317782.png"
                     alt="Zupito email automation flow"
-                    className="w-auto max-h-[670px]  max-w-full"
+                    className="w-auto max-h-[670px] max-w-full"
                   />
                 </div>
               </div>

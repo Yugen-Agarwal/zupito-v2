@@ -23,17 +23,17 @@ const Footer = () => {
           >
             <div className="w-full flex justify-center  overflow-visible">
               <div
-                className="w-full h-full px-6! sm:px-8! md:px-12! lg:px-16! xl:px-24! 2xl:px-32! pt-6! sm:pt-8! md:pt-12! lg:pt-16! xl:pt-24! 2xl:pt-32! flex flex-col md:flex-row items-center justify-start pb-0!"
+                className="w-full h-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 pt-8 sm:pt-10 md:pt-12 lg:pt-16 xl:pt-20 2xl:pt-24 flex flex-col md:flex-row items-center justify-start pb-0"
                 style={{ zIndex: 2 }}
               >
                 {/* Text Content Section */}
                 <div className="w-full md:flex-1 flex flex-col justify-center items-center md:items-start text-center md:text-left">
-                  <div className="w-full flex flex-col gap-6 sm:gap-[30px] items-center md:items-start">
-                    <div className="flex flex-col gap-8 sm:gap-[40px] w-full">
-                      <div className="flex flex-col gap-4 sm:gap-[16px] w-full items-center md:items-start">
+                  <div className="w-full flex flex-col gap-5 sm:gap-6 md:gap-8 items-center md:items-start">
+                    <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 w-full">
+                      <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 w-full items-center md:items-start">
                         <h1
                           data-animate-item
-                          className="home-title max-w-[450px] md:max-w-[600px] text-white capitalize font-['Inter'] text-[32px]! sm:text-[36px]! md:text-[40px]! xl:text-[44px]! leading-16!"
+                          className="home-title max-w-[450px] md:max-w-[600px] text-white capitalize font-['Inter'] text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[44px] leading-[1.2] sm:leading-[1.15]"
                         >
                           Sign Up For{" "}
                           <span
@@ -51,7 +51,7 @@ const Footer = () => {
                         <p
                           data-animate-item
                           style={{ transitionDelay: "0.08s" }}
-                          className="home-description text-[#546779] font-['Manrope'] text-[14px] md:text-[16px] max-w-[500px] md:max-w-none"
+                          className="home-description text-[#546779] font-['Manrope'] text-[14px] sm:text-[15px] md:text-[16px] max-w-[500px] md:max-w-none leading-[1.6] mt-2 sm:mt-3"
                         >
                           Use your free credits for both finding and verifying
                           emails.
@@ -62,7 +62,7 @@ const Footer = () => {
                     <div
                       data-animate-item
                       style={{ transitionDelay: "0.2s" }}
-                      className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 md:gap-6 w-full max-w-[800px] justify-center md:justify-start"
+                      className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 md:gap-5 lg:gap-6 w-full max-w-[800px] justify-center md:justify-start mt-2 sm:mt-3"
                     >
                       <button
                         data-hover="lift"
@@ -115,19 +115,19 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flex flex-col gap-4 px-6! sm:px-8! md:px-12! lg:px-16! xl:px-24! 2xl:px-32!">
-              <div className="w-full max-w-full mx-auto mt-6! md:mt-8! lg:mt-12! flex flex-col lg:flex-row gap-4">
-                <div className="flex-1 rounded-[16px] bg-[#1C2D3E] py-3! md:py-5! px-8! flex flex-col gap-5! md:gap-7!">
-                  <div className="text-white font-extrabold text-[30px] sm:text-[36px] md:text-[42px] leading-[110%]">
+            <div className="flex flex-col gap-4 sm:gap-5 md:gap-6 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
+              <div className="w-full max-w-full mx-auto mt-6 sm:mt-8 md:mt-10 lg:mt-12 flex flex-col lg:flex-row gap-4 sm:gap-5 md:gap-6">
+                <div className="flex-1 rounded-[16px] bg-[#1C2D3E] py-4 sm:py-5 md:py-6 px-4 sm:px-6 md:px-8 flex flex-col gap-4 sm:gap-5 md:gap-6 lg:gap-7">
+                  <div className="text-white font-extrabold text-[30px] sm:text-[36px] md:text-[42px] leading-[1.1]">
               <img src="/images/footer-logo.png" alt="Zupito" className="h-6 sm:h-7 md:h-[30px] lg:h-[34.5px] w-auto" />
                   </div>
-                  <p className="text-[#546779] text-[15px] sm:text-[18px] leading-[28px] md:leading-[32px] max-w-[760px] font-['Manrope']">
+                  <p className="text-[#546779] text-[15px] sm:text-[16px] md:text-[18px] leading-[1.6] max-w-[760px] font-['Manrope']">
                     From dynamic visuals to interactive features, our software
                     empowers you to craft a website tailored to every need.
                   </p>
                 </div>
 
-                <div className="w-full lg:w-auto grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 gap-2 lg:gap-3">
+                <div className="w-full lg:w-auto grid grid-cols-3 sm:grid-cols-3 md:grid-cols-3 gap-3 sm:gap-4 md:gap-5">
                   {[
                     { label: "Facebook", icon: "/images/FB.svg" },
                     { label: "Linked In", icon: "/images/Linkedin.svg" },
@@ -135,7 +135,7 @@ const Footer = () => {
                   ].map((s) => (
                     <div
                       key={s.label}
-                      className="rounded-[16px] bg-[#1C2D3E] flex flex-col items-center justify-center gap-4 p-4 sm:p-6 cursor-pointer"
+                      className="rounded-[16px] bg-[#1C2D3E] flex flex-col items-center justify-center gap-3 sm:gap-4 p-4 sm:p-5 md:p-6 cursor-pointer"
                     >
                       <div className="w-[37.5px] h-[37.5px] rounded-full flex items-center justify-center">
                         <img
@@ -152,8 +152,8 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="w-full max-w-full mx-auto rounded-[16px] bg-[#1C2D3E] px-6! md:px-[52px]! py-8! md:py-[50px]!">
-                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 lg:gap-14 text-white">
+              <div className="w-full max-w-full mx-auto rounded-[16px] bg-[#1C2D3E] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-14 py-6 sm:py-8 md:py-10 lg:py-12">
+                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-12 lg:gap-14 text-white">
                   {[
                     {
                       title: "Product",
@@ -174,15 +174,15 @@ const Footer = () => {
                     },
                     { title: "Company", items: ["Terms", "Contact Us"] },
                   ].map((col) => (
-                    <div key={col.title} className="flex flex-col gap-5 md:gap-6">
-                      <h3 className="font-bold text-[16px] sm:text-[18px] md:text-[20px]tracking-[-0.32px] capitalize">
+                    <div key={col.title} className="flex flex-col gap-4 sm:gap-5 md:gap-6">
+                      <h3 className="font-bold text-[16px] sm:text-[17px] md:text-[18px] lg:text-[20px] tracking-[-0.32px] capitalize leading-[1.3]">
                         {col.title}
                       </h3>
-                      <ul className="flex flex-col gap-4 md:gap-5 opacity-90">
+                      <ul className="flex flex-col gap-3 sm:gap-4 md:gap-5 opacity-90">
                         {col.items.map((it) => (
                           <li
                             key={it}
-                            className="text-[16px] sm:text-[17px] md:text-[18px] leading-[130%] cursor-pointer"
+                            className="text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] leading-[1.5] cursor-pointer"
                           >
                             {it}
                           </li>
@@ -194,7 +194,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full max-w-full mx-auto text-center text-white text-[14px] lg:text-[16px] py-10!">
+            <div className="w-full max-w-full mx-auto text-center text-white text-[14px] sm:text-[15px] lg:text-[16px] py-6 sm:py-8 md:py-10 leading-[1.5]">
               © 2025 Zupitu.{" "}
               <span className="text-white/70">All Rights Reserved.</span>
             </div>

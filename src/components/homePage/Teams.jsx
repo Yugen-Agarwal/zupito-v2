@@ -23,12 +23,12 @@ const Teams = () => {
             </div>
           </div>
           {/* Hero row: heading left, paragraph right on large screens */}
-          <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 items-start gap-6 lg:gap-16 text-center lg:text-left">
+          <div className="mt-4 sm:mt-5 md:mt-6 grid grid-cols-1 lg:grid-cols-2 items-start gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 text-center lg:text-left">
             {/* Heading */}
             <h2
               data-animate-item
               style={{ transitionDelay: "0.08s" }}
-              className="home-title xl:w-[35.7491rem] font-['Inter'] font-bold text-[#132436]"
+              className="home-title xl:w-[35.7491rem] font-['Inter'] font-bold text-[#132436] leading-[1.15]"
             >
               <span className="align-middle">
                 Reach
@@ -57,14 +57,14 @@ const Teams = () => {
               <p
                 data-animate-item
                 style={{ transitionDelay: "0.15s" }}
-                className="max-w-[550px] font-['Manrope'] font-medium text-[14px] lg:text-[18px] text-[#475768]"
+                className="max-w-[550px] font-['Manrope'] font-medium text-[14px] sm:text-[16px] lg:text-[18px] text-[#475768] leading-[1.6]"
               >
                 Experience the quality and speed of Artificial Intelligence in email verification and email finding. Try Zupitu without Sign-Up. We welcome FREE trials and offer 10 Credits daily forever.
               </p>
             </div>
           </div>
           {/* Features grid */}
-          <div className="!mt-10 sm:!mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-3">
+          <div className="mt-8 sm:mt-10 md:mt-12 lg:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
             {[
               {
                 title: "Streamlined Efficiency",
@@ -96,7 +96,7 @@ const Teams = () => {
                 data-animate-item
                 style={{ transitionDelay: `${0.1 * idx}s` }}
                 data-hover="lift"
-                className="bg-white rounded-[0.6375rem] sm:rounded-[0.7438rem] lg:rounded-[0.85rem] shadow-[0_0.4375rem_1rem_0_#181D2717] px-4 sm:px-5 pt-6 sm:pt-7 lg:pt-8 pb-8 sm:pb-9 lg:pb-10 min-h-[11.6872rem] sm:min-h-[12.7496rem] lg:min-h-[13.8121rem] flex flex-col gap-3 sm:gap-4 lg:gap-[0.85rem] cursor-pointer"
+                className="bg-white rounded-[0.6375rem] sm:rounded-[0.7438rem] lg:rounded-[0.85rem] shadow-[0_0.4375rem_1rem_0_#181D2717] px-4 sm:px-5 md:px-6 pt-5 sm:pt-6 md:pt-7 lg:pt-8 pb-6 sm:pb-7 md:pb-8 lg:pb-10 min-h-[11.6872rem] sm:min-h-[12.7496rem] lg:min-h-[13.8121rem] flex flex-col gap-3 sm:gap-4 lg:gap-5 cursor-pointer"
               >
                 <div className="w-[2.5499rem] h-[2.5499rem] sm:w-[2.7624rem] sm:h-[2.7624rem] lg:w-[3rem] lg:h-[3rem] rounded-full bg-[#FAFAFF] flex items-center justify-center">
                   <img
@@ -117,11 +117,11 @@ const Teams = () => {
                     className="w-full h-full"
                   />
                 </div>
-                <div className="flex flex-col gap-3">
-                  <h3 className="text-[20.4px] font-semibold leading-7 text-[#132436] font-['Inter'] capitalize">
+                <div className="flex flex-col gap-2 sm:gap-3">
+                  <h3 className="text-[18px] sm:text-[20px] md:text-[20.4px] font-semibold leading-[1.3] sm:leading-[1.4] text-[#132436] font-['Inter'] capitalize">
                     {item.title}
                   </h3>
-                  <p className="home-description text-[1.156rem] text-[#546779] font-['Manrope']">
+                  <p className="home-description text-[14px] sm:text-[15px] md:text-[16px] text-[#546779] font-['Manrope'] leading-[1.6]">
                     {item.desc}
                   </p>
                 </div>
