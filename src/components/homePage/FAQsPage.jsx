@@ -63,27 +63,47 @@ const FAQsPage = () => {
                 <h2
                   data-animate-item
                   style={{ transitionDelay: "0.08s" }}
-                  className="home-title text-[#132436] font-['Inter'] font-bold text-center lg:text-left"
+                  className="
+      home-title
+      text-[#132436]
+      font-['Inter']
+      font-bold
+      text-center
+      lg:text-left
+      leading-[1.2]
+    "
                 >
-                  <span className="inline-flex items-center">
-                    <img
-                      src="/images/faq.svg"
-                      alt=""
-                      className="mr-3 w-[2.1249rem] h-[2.1249rem] sm:w-[2.6562rem] sm:h-[2.6562rem] md:w-[3.3999rem] md:h-[3.3999rem] shrink-0"
-                    />
-                    <span>Frequently</span>
-                  </span>
-                  <br className="hidden sm:block" />
-                  <span className="inline-flex items-center">
-                    <span>Asked Questions</span>
-                    <img
-                      src="/images/faq2.svg"
-                      alt=""
-                      className="ml-3 w-[2.1249rem] h-[2.1249rem] sm:w-[2.6562rem] sm:h-[2.6562rem] md:w-[3.1874rem] md:h-[3.1874rem] shrink-0"
-                    />
+                  {/* RESPONSIVE WRAPPER */}
+                  <span className="flex flex-col md:block items-center md:items-start">
+
+                    {/* FIRST LINE */}
+                    <span className="inline-flex items-center justify-center lg:justify-start gap-2">
+                      <img
+                        src="/images/faq.svg"
+                        alt=""
+                        className="w-6 h-6 sm:w-[34px] sm:h-[34px] md:w-[42px] md:h-[42px] shrink-0"
+                      />
+                      <span className="whitespace-nowrap">Frequently</span>
+                    </span>
+
+                    {/* LINE BREAK — only md+ */}
+                    <br className="hidden md:block" />
+
+                    {/* SECOND LINE */}
+                    <span className="inline-flex items-center justify-center lg:justify-start gap-2 mt-1 md:mt-0">
+                      <span className="whitespace-nowrap">Asked Questions</span>
+                      <img
+                        src="/images/faq2.svg"
+                        alt=""
+                        className="w-6 h-6 sm:w-[34px] sm:h-[34px] md:w-[42px] md:h-[42px] shrink-0"
+                      />
+                    </span>
+
                   </span>
                 </h2>
               </div>
+
+
 
               <div className="flex-1 max-w-[568px]">
                 {/* ✅ Reduced bottom margin on mobile */}
@@ -123,9 +143,8 @@ const FAQsPage = () => {
                     </div>
 
                     <button
-                      className={`shrink-0 w-[2.6562rem] h-[1.8063rem] rounded-full flex items-center justify-center transition-all duration-300 ${
-                        openIndex === index ? 'bg-[#132436]' : 'bg-[#F6F6F6]'
-                      }`}
+                      className={`shrink-0 w-[2.6562rem] h-[1.8063rem] rounded-full flex items-center justify-center transition-all duration-300 ${openIndex === index ? 'bg-[#132436]' : 'bg-[#F6F6F6]'
+                        }`}
                       type="button"
                     >
                       {openIndex === index ? (
@@ -142,11 +161,10 @@ const FAQsPage = () => {
 
                   {/* ✅ Padding only when open */}
                   <div
-                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                      openIndex === index
-                        ? 'max-h-[26.5617rem] opacity-100 py-3 sm:py-4'
-                        : 'max-h-0 opacity-0 py-0'
-                    }`}
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index
+                      ? 'max-h-[26.5617rem] opacity-100 py-3 sm:py-4'
+                      : 'max-h-0 opacity-0 py-0'
+                      }`}
                   >
                     <div className="px-4 sm:px-6 lg:px-[2.1249rem]">
                       <p className="text-[0.9375rem] sm:text-[1rem] text-[#747C9A] font-['Manrope'] leading-relaxed">
