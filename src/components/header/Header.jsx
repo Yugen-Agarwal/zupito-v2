@@ -41,13 +41,29 @@ function Header() {
     };
   }, [isProductDropdownOpen]);
 
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
+
+
   return (
     <header
       className="relative w-full h-14 sm:h-16 md:h-[70px] lg:h-20 bg-white/80 border-b border-gray-200"
       style={{ zIndex: 60 }}
     >
       {/* Container with responsive padding */}
-      <div className="home-container h-full">
+      <div
+        className={`home-container h-full ${isMobileMenuOpen ? 'invisible pointer-events-none' : ''
+          }`}
+      >
         {/* Content wrapper with max-width 1280px and space-between layout */}
         <div className="h-full flex items-center justify-between">
           {/* Logo */}
@@ -213,7 +229,7 @@ function Header() {
       {isMobileMenuOpen && (
         <div
           className="fixed inset-0 bg-white lg:hidden overflow-y-auto"
-          style={{ top: '40px', zIndex: 80 }}
+          style={{ top: `${window.location.pathname === '/' ? '40px' : '0px'}`, zIndex: 80 }}
         >
           <button
             onClick={closeMobileMenu}
@@ -230,7 +246,7 @@ function Header() {
             </svg>
           </button>
           {/* Modal Header with Logo and Close Button */}
-          <div className="sticky top-0 bg-white border-b border-[#EEF0F3] px-4 sm:px-6 md:px-8 py-2 sm:py-4x md:py-5 flex items-center justify-between z-10">
+          <div className="sticky top-0 h-16 md:h-[70px] bg-white border-b border-[#EEF0F3] px-4 sm:px-6 md:px-8  flex items-center justify-between z-10">
             {/* Logo */}
             <div className="shrink-0">
               <img src="/images/websitelogo/zupito-logo.png" alt="Zupito" className="h-6 sm:h-7 md:h-[30px] lg:h-[34.5px] w-auto" />
@@ -254,14 +270,14 @@ function Header() {
           </div>
 
           {/* Modal Content */}
-          <div className="px-4 sm:px-6 md:px-8 py-8">
+          <div className="px-4 sm:px-6 md:px-8 py-4 sm:py-6 md:py-8">
             <nav className="flex flex-col space-y-6">
               {/* Mobile Navigation Links */}
               <div>
                 <button
                   onClick={toggleMobileProductDropdown}
-                  className="flex items-center justify-between w-full text-[#132436] hover:text-[#FF6B35] transition-colors py-2"
-                  style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '15.3px', lineHeight: '110%' }}
+                  className="flex items-center justify-between w-full text-[#132436] hover:text-[#FF6B35] transition-colors py-2 lg:text-[14px] xl:text-[16px]"
+                  style={{ fontFamily: 'Manrope', fontWeight: 600, lineHeight: '110%' }}
                 >
                   <span>Product</span>
                   <svg
@@ -280,28 +296,28 @@ function Header() {
                     <Link
                       to="/"
                       onClick={closeMobileMenu}
-                      className="block text-gray-800 hover:text-[#FF6B35] transition-colors text-[13.6px] font-semibold py-2"
+                      className="block text-gray-800 hover:text-[#FF6B35] transition-colors lg:text-[14px] xl:text-[16px] font-semibold py-2"
                     >
                       Home
                     </Link>
                     <Link
                       to="/email-finder"
                       onClick={closeMobileMenu}
-                      className="block text-gray-800 hover:text-[#FF6B35] transition-colors text-[13.6px] font-medium py-2"
+                      className="block text-gray-800 hover:text-[#FF6B35] transition-colors lg:text-[14px] xl:text-[16px] font-medium py-2"
                     >
                       Email Finder Page
                     </Link>
                     <Link
                       to="/email-verifier"
                       onClick={closeMobileMenu}
-                      className="block text-gray-800 hover:text-[#FF6B35] transition-colors text-[13.6px] font-medium py-2"
+                      className="block text-gray-800 hover:text-[#FF6B35] transition-colors lg:text-[14px] xl:text-[16px] font-medium py-2"
                     >
                       Email Verifier Page
                     </Link>
                     <Link
                       to="/help-desk"
                       onClick={closeMobileMenu}
-                      className="block text-gray-800 hover:text-[#FF6B35] transition-colors text-[13.6px] font-medium py-2"
+                      className="block text-gray-800 hover:text-[#FF6B35] transition-colors lg:text-[14px] xl:text-[16px] font-medium py-2"
                     >
                       Help Desk Page
                     </Link>
@@ -312,8 +328,8 @@ function Header() {
               <Link
                 to="/use-cases"
                 onClick={closeMobileMenu}
-                className="text-[#132436] hover:text-[#FF6B35] transition-colors py-2"
-                style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '13.5px', lineHeight: '110%' }}
+                className="text-[#132436] hover:text-[#FF6B35] transition-colors py-2 lg:text-[14px] xl:text-[16px]"
+                style={{ fontFamily: 'Manrope', fontWeight: 600, lineHeight: '110%' }}
               >
                 Use Cases
               </Link>
@@ -321,16 +337,16 @@ function Header() {
               <Link
                 to="/pricing"
                 onClick={closeMobileMenu}
-                className="text-[#132436] hover:text-[#FF6B35] transition-colors py-2"
-                style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '13.5px', lineHeight: '110%' }}
+                className="text-[#132436] hover:text-[#FF6B35] transition-colors py-2 lg:text-[14px] xl:text-[16px]"
+                style={{ fontFamily: 'Manrope', fontWeight: 600, lineHeight: '110%' }}
               >
                 Pricing
               </Link>
 
               <button
                 onClick={closeMobileMenu}
-                className="flex items-center justify-between text-[#132436] hover:text-[#FF6B35] transition-colors py-2"
-                style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '13.5px', lineHeight: '110%' }}
+                className="flex items-center justify-between text-[#132436] hover:text-[#FF6B35] transition-colors py-2 lg:text-[14px] xl:text-[16px]"
+                style={{ fontFamily: 'Manrope', fontWeight: 600, lineHeight: '110%' }}
               >
                 <span>Resources</span>
                 <svg
@@ -346,8 +362,8 @@ function Header() {
               <a
                 href="#blog"
                 onClick={closeMobileMenu}
-                className="text-[#132436] hover:text-[#FF6B35] transition-colors py-2"
-                style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '13.5px', lineHeight: '110%' }}
+                className="text-[#132436] hover:text-[#FF6B35] transition-colors py-2 lg:text-[14px] xl:text-[16px]"
+                style={{ fontFamily: 'Manrope', fontWeight: 600, lineHeight: '110%' }}
               >
                 Blog
               </a>
@@ -355,8 +371,8 @@ function Header() {
               <Link
                 to="/deals"
                 onClick={closeMobileMenu}
-                className="text-[#132436] hover:text-[#FF6B35] transition-colors py-2"
-                style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '13.5px', lineHeight: '110%' }}
+                className="text-[#132436] hover:text-[#FF6B35] transition-colors py-2 lg:text-[14px] xl:text-[16px]"
+                style={{ fontFamily: 'Manrope', fontWeight: 600, lineHeight: '110%' }}
               >
                 Deals
               </Link>

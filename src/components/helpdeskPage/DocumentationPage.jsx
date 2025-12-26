@@ -1,11 +1,10 @@
 const DocumentationPage = () => {
   return (
-    <section className="relative w-full overflow-hidden">
-      <div className="w-full">
+    <section className="relative mx-auto max-w-[1800px] px-4 overflow-hidden">
+      <div className="mb-4">
         <div
           className="
             relative
-            w-full
             rounded-[32px]
             px-6 sm:px-8 md:px-12 lg:px-16 xl:px-[120px]
             py-[64px] sm:py-[72px] md:py-[88px]

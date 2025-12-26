@@ -82,6 +82,7 @@ const WinningTeams = () => {
               <div
                 key={idx}
                 data-animate-item
+                data-hover="lift"
                 className="
                   w-full 
                   min-w-0
@@ -92,7 +93,6 @@ const WinningTeams = () => {
                   px-6 py-8
                   text-center
                   flex flex-col items-center justify-center gap-3
-                  transition-transform hover:-translate-y-1
                 "
               >
                 <div className="text-[#EDFF67] font-bold font-['Inter'] text-3xl sm:text-4xl">

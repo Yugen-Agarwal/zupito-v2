@@ -117,11 +117,11 @@ const Footer = () => {
 
             <div className="flex flex-col gap-4 px-6! sm:px-8! md:px-12! lg:px-16! xl:px-24! 2xl:px-32!">
               <div className="w-full max-w-full mx-auto mt-6! md:mt-8! lg:mt-12! flex flex-col lg:flex-row gap-4">
-                <div className="flex-1 rounded-[16px] bg-[#1C2D3E] py-5! md:py-5! px-8! flex flex-col gap-3! md:gap-5!">
+                <div className="flex-1 rounded-[16px] bg-[#1C2D3E] py-7! md:py-[32px]! px-8! flex flex-col gap-[18px]">
                   <div className="text-white font-extrabold text-[30px] sm:text-[36px] md:text-[42px] leading-[110%]">
                     <img src="/images/footer-logo.png" alt="Zupito" className="h-6 sm:h-7 md:h-[30px] lg:h-[34.5px] w-auto" />
                   </div>
-                  <p className="text-[#546779] text-[15px] sm:text-[18px] leading-[28px] md:leading-[32px] max-w-[760px] font-['Manrope']">
+                  <p className="text-[#546779] text-[15px] sm:text-[18px] leading-[28px] md:leading-[32px] max-w-[760px] font-['Manrope'] font-normal">
                     From dynamic visuals to interactive features, our software
                     empowers you to craft a website tailored to every need.
                   </p>
@@ -135,7 +135,7 @@ const Footer = () => {
                   ].map((s) => (
                     <div
                       key={s.label}
-                      className="rounded-[16px] bg-[#1C2D3E] flex flex-col items-center justify-center gap-2 md:gap-4 p-4 sm:p-6 cursor-pointer"
+                      className="rounded-[16px] bg-[#1C2D3E] flex flex-col items-center justify-center gap-2 p-4 sm:p-6 cursor-pointer"
                     >
                       <div className="w-[37.5px] h-[37.5px] rounded-full flex items-center justify-center">
                         <img
@@ -174,15 +174,15 @@ const Footer = () => {
                     },
                     { title: "Company", items: ["Terms", "Contact Us"] },
                   ].map((col) => (
-                    <div key={col.title} className="flex flex-col gap-5 md:gap-6">
-                      <h3 className="font-bold text-[16px] sm:text-[18px] md:text-[20px]tracking-[-0.32px] capitalize">
+                    <div key={col.title} className="flex flex-col gap-3 md:gap-5">
+                      <h3 className="font-semibold text-[16px] sm:text-[18px] md:text-[20px] tracking-[-0.32px] capitalize">
                         {col.title}
                       </h3>
-                      <ul className="flex flex-col gap-4 md:gap-5 opacity-90">
+                      <ul className="flex flex-col gap-3 md:gap-5 opacity-90">
                         {col.items.map((it) => (
                           <li
                             key={it}
-                            className="text-[16px] sm:text-[17px] md:text-[18px] leading-[130%] cursor-pointer"
+                            className="text-[14px] sm:text-[16px] md:text-[18px] leading-[130%] cursor-pointer font-normal"
                           >
                             {it}
                           </li>
@@ -194,7 +194,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full max-w-full mx-auto text-center text-white text-[14px] lg:text-[16px] py-10!">
+            <div className="w-full max-w-full mx-auto text-center text-white text-[16px] lg:text-[18px] py-10!">
               © 2025 Zupitu.{" "}
               <span className="text-white/70">All Rights Reserved.</span>
             </div>
