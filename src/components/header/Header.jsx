@@ -246,7 +246,7 @@ function Header() {
             </svg>
           </button>
           {/* Modal Header with Logo and Close Button */}
-          <div className="sticky top-0 h-16 md:h-[70px] bg-white border-b border-[#EEF0F3] px-4 sm:px-6 md:px-8  flex items-center justify-between z-10">
+          <div className="sticky top-0 h-15 sm:h-16 md:h-[70px] bg-white border-b border-[#EEF0F3] px-4 sm:px-6 md:px-8  flex items-center justify-between z-10">
             {/* Logo */}
             <div className="shrink-0">
               <img src="/images/websitelogo/zupito-logo.png" alt="Zupito" className="h-6 sm:h-7 md:h-[30px] lg:h-[34.5px] w-auto" />
